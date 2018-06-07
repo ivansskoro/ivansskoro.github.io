@@ -102,11 +102,10 @@ a:hover{
 }
 .index-opis{
 	grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 9;
 	grid-row-start: 1;
   grid-row-end: 2;
   background-color: white;
-	padding-right: 1em;
 }
 
 .index-linkovi{
