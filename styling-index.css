@@ -114,12 +114,15 @@ a:hover{
 	grid-column-start: 1;
   grid-column-end: 9;
 	grid-row-start: 2;
-	margin-top: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 .index-resume{
 	grid-column-start: 1;
   grid-column-end: 6;
+	margin-top: 6em;
+	margin-bottom: 1em;
 }
 
 .index-social{
@@ -127,7 +130,8 @@ a:hover{
 	justify-content: space-between;
 	grid-column-start: 1;
   grid-column-end: 9;
-	padding-bottom: 3em;
+	padding-top: 6em;
+	padding-bottom: 10em;
 }
 
 
