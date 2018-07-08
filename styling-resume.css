@@ -9,7 +9,8 @@ body {
 	border-right: 1em;
 	border-color: #000;
 	border-style: solid;
-
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
