@@ -119,8 +119,8 @@ a:hover{
 }
 
 .index-resume{
-	grid-column-start: 1;
-  grid-column-end: 6;
+	grid-column-start: 4;
+  grid-column-end: 9;
 	margin-top: 6em;
 	margin-bottom: 1em;
 }
