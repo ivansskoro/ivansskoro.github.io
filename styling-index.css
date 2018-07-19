@@ -30,6 +30,7 @@ h1{
 	font-size: 6.5em;
 	line-height: 1.1;
 	letter-spacing: -0.01em;
+	margin-bottom: 0.5em;
 }
 
 h2 {
@@ -42,7 +43,7 @@ h2 {
 
 h3{
 	font-family: 'Arial', sans-serif;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	line-height: 1.4em;
 	font-weight: normal;
 	margin-bottom: 0.5em;
@@ -56,7 +57,7 @@ h4{
 
 p {
 	font-family: 'Spectral', serif;
-	font-size: 1.25em;
+	font-size: 1.4em;
 	line-height: 1.5;
 	margin-top: 0;
 	margin-bottom: 2em;
@@ -120,7 +121,7 @@ a:hover{
 .index-resume{
 	grid-column-start: 4;
   grid-column-end: 9;
-	margin-top: 6em;
+	margin-top: 3em;
 	margin-bottom: 1em;
 }
 
