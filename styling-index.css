@@ -12,7 +12,7 @@ body {
 
 .pozadinaGradijent {
 	background-color: white;
-	margin: 0.8em;
+	margin: 1em;
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +29,7 @@ h1{
 	font-weight: 200;
 	font-size: 6.5em;
 	line-height: 1.1;
+	letter-spacing: -0.02em;
 }
 
 h2 {
@@ -63,29 +64,27 @@ p {
 }
 
 a {
-	font-style: italic;
 	font-size: 1.25em;
 	color: #000;
 	letter-spacing: 0.5px;
-	line-height: 32px;
+	line-height: 1.5;
 	margin-top: 0;
 	margin-bottom: 0.6em;
-	text-decoration: underline;
-	text-decoration-color: white;
-	transition: text-decoration-color 0.15s;
+	background-color: white;
+	text-decoration: none;
+	transition: background-color 0.15s;
 }
 a:hover{
-	text-decoration: underline;
-	text-decoration-color: black;
-	transition: text-decoration-color 0.15s;
+	background-color: gray;
+	transition: background-color 0.15s;
 }
 
 .naslovlink{
 		font-size: 1em;
 		line-height: 1.4em;
 		margin-bottom: 0.8em;
-
 }
+
 .small-bottom-padding{
 	margin-bottom: 0.2em;
 }
