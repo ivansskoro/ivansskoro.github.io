@@ -42,14 +42,12 @@ h2 {
 }
 
 h4 {
-
 }
 
 p {
 	font-size: 24px;
 	line-height: 1.5;
-	margin-top: 0;
-	margin-bottom: 2em;
+	margin: 0;
 }
 
 a {
@@ -57,6 +55,7 @@ a {
 	line-height: 1.5;
 	text-decoration: none;
 }
+
 a:hover{
 	background: rgb(130,130,130);
 	background: -moz-linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
@@ -64,9 +63,6 @@ a:hover{
 	background: linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-.linkproject{
-
-}
 
 .linksmall{
 		font-size: 28px;
@@ -119,8 +115,8 @@ a:hover{
 	flex-wrap: wrap;
 	grid-column-start: 1;
   grid-column-end: 9;
-	padding-top: 2em;
-	padding-bottom: 5em;
+	margin-top: 2em;
+	margin-bottom: 6em;
 }
 
 
@@ -152,42 +148,36 @@ a:hover{
 	}
 
 	h2 {
-		font-size: 30px;
+		font-size: 38px;
 		line-height: 1em;
 		font-weight: normal;
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
 
+	.linksmall{
+			font-size: 24px;
+	}
 
 	.wrapper {
-		padding-top: 2em;
 		padding-left: 2em;
 		padding-right: 2em;
-	  display: grid;
-		max-width: 1400px;
-	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-column-gap: 24px;
 	}
+
 	.index-naslov{
-		margin-top: 1em;
-		grid-column-start: 1;
-	  grid-column-end: 9;
-		grid-row-start: 1;
-	  grid-row-end: 2;
 	}
 
 	.index-projects{
 		grid-column-start: 1;
 	  grid-column-end: 9;
-		margin-top: 2em;
+		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 
 	.index-resume{
 		grid-column-start: 2;
-	  grid-column-end: 8;
-		margin-top: 2em;
-		margin-bottom: 1em;
+	  grid-column-end: 9;
+		margin-top: 1em;
 	}
 
 	.index-social{
@@ -196,8 +186,68 @@ a:hover{
 		flex-wrap: wrap;
 		grid-column-start: 1;
 	  grid-column-end: 9;
-		padding-top: 2em;
-		padding-bottom: 5em;
+		margin-top: 1em;
+		margin-bottom: 6em;
+	}
+}
+
+@media screen and (max-width : 660px) {
+
+	h1{
+		font-weight: normal;
+		font-size: 48px;
+		line-height: 1.1;
+		margin-bottom: 0em;
 	}
 
+	h2 {
+		font-size: 30px;
+		line-height: 1em;
+		font-weight: normal;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.linksmall{
+			font-size: 24px;
+	}
+
+	.pozadinaGradijent {
+		margin: 0.5em;
+	}
+
+	.wrapper {
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-top: 1em;
+	}
+
+	.index-naslov{
+		margin-top: 0;
+	}
+
+	.index-projects{
+		grid-column-start: 1;
+	  grid-column-end: 9;
+	}
+
+	.index-resume{
+		grid-column-start: 1;
+	  grid-column-end: 9;
+		margin-top: 1em;
+	}
+
+	.index-social{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		grid-column-start: 1;
+	  grid-column-end: 9;
+		margin-top: 1em;
+		margin-bottom: 6em;
+	}
 }
