@@ -63,6 +63,11 @@ a:hover{
 	background: linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
 }
 
+a:active
+{
+	background: white;
+}
+
 
 .linksmall{
 		font-size: 28px;
