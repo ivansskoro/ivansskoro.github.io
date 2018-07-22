@@ -6,17 +6,15 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
-	background: -webkit-linear-gradient(bottom right,#ffecd1,#d4d4d4); /*Safari 5.1-6*/
-	background: -o-linear-gradient(bottom right,#ffecd1,#d4d4d4); /*Opera 11.1-12*/
-	background: -moz-linear-gradient(bottom right,#ffecd1,#d4d4d4); /*Fx 3.6-15*/
-	background: linear-gradient(bottom right, #ffecd1, #d4d4d4); /*Standard*/
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	background: rgb(255,86,142);
+	background: -moz-linear-gradient(174deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
+	background: -webkit-linear-gradient(174deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
+	background: linear-gradient(174deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
 }
 
 .pozadinaGradijent {
 	background-color: white;
-	margin: 1em;
+	margin: 0.8em;
 }
 
 ::-webkit-scrollbar {
@@ -43,34 +41,32 @@ h2 {
 }
 
 h3{
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 1.4em;
-	font-weight: normal;
+	font-weight: bold;
 	margin-bottom: 0.5em;
 }
 
 p {
-	font-size: 1em;
+	font-size: 24px;
 	line-height: 1.5;
 	margin-top: 0;
 	margin-bottom: 2em;
-	letter-spacing: -0.03em;
 }
 
 a {
 	font-size: 1.25em;
 	color: #000;
-	letter-spacing: 0.5px;
 	line-height: 1.5;
 	margin-top: 0;
 	margin-bottom: 0.6em;
-	background-color: white;
 	text-decoration: none;
-	transition: background-color 0.15s;
 }
 a:hover{
-	background-color: gray;
-	transition: background-color 0.15s;
+	background: rgb(130,130,130);
+	background: -moz-linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .naslovlink{
