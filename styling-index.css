@@ -1,11 +1,11 @@
 body {
 	font-family: 'Arial', sans-serif;
 	font-weight: normal;
-	letter-spacing: -0.01em;
 	font-size: 1.25em;
 	margin: 0;
 	padding: 0;
 	color: #000;
+	letter-spacing: 0.01em;
 	background: rgb(255,86,142);
 	background: -moz-linear-gradient(120deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
 	background: -webkit-linear-gradient(120deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
@@ -27,10 +27,14 @@ body {
 }
 
 h1{
-	font-weight: normal;
 	font-size: 80px;
 	line-height: 1.1;
+	font-weight: normal;
 	margin-bottom: 0.5em;
+}
+
+.extra-spacing {
+	letter-spacing: 0.05em;
 }
 
 h2 {
@@ -81,6 +85,7 @@ a:hover{
 .small-bottom-padding{
 	margin-bottom: 0.2em;
 }
+
 .last{
 	margin-bottom: 1.6em;
 }
