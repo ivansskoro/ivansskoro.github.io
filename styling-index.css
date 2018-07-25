@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.005em;
 	background: rgb(255,86,142);
 	background: -moz-linear-gradient(120deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
 	background: -webkit-linear-gradient(120deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
@@ -29,10 +29,11 @@ body {
 }
 
 h1{
-	font-size: 80px;
+	font-size: 84px;
 	line-height: 1.1;
 	font-weight: normal;
 	margin-bottom: 0.5em;
+	letter-spacing: -0.01em;
 }
 
 h2 {
@@ -43,8 +44,6 @@ h2 {
 	margin-bottom: 1em;
 }
 
-h4 {
-}
 
 p {
 	font-size: 24px;
@@ -73,11 +72,11 @@ a:hover{
 
 
 .linksmall{
-		font-size: 28px;
-		line-height: 1.4;
-		font-weight: bold;
-		margin-right: 2em;
-		margin-top: 2em;
+	font-size: 28px;
+	line-height: 1.4;
+	font-weight: bold;
+	margin-right: 2em;
+	margin-top: 2em;
 }
 
 .small-bottom-padding{
@@ -129,22 +128,7 @@ a:hover{
 }
 
 
-
 @media screen and (min-width : 860px) and (max-width : 1000px) {
-
-
-}
-
-@media screen and (min-width : 650px) and (max-width : 860px) {
-
-}
-
-@media screen and (min-width : 520px) and (max-width : 650px) {
-
-}
-
-@media screen and (min-width : 200px) and (max-width : 520px) {
-
 }
 
 @media screen and (max-width : 940px) {
