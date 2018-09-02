@@ -73,6 +73,7 @@ a:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 24px;
 }
+
 .index-naslov{
 	margin-top: 3em;
 	grid-column-start: 1;
@@ -96,7 +97,6 @@ a:hover{
 
 .index-social{
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	grid-column-start: 1;
   grid-column-end: 9;
@@ -119,7 +119,7 @@ a:hover{
 }
 
 .margindesno {
-	margin-right: 2em;
+	margin-right: 3em;
 }
 
 .margintop {
@@ -137,21 +137,31 @@ a:hover{
 
 @media screen and (max-width : 940px) {
 
-	h1{
-		font-size: 60px;
-		line-height: 1.1;
+	h2 {
+		font-size: 22px;
 	}
 
-	.joke{
-		font-size: 5px;
+	p {
+		font-size: 22px;
 	}
+
+	 a {
+	 		font-size: 22px;
+	 }
+
+	.pozadinaGradijent {
+		margin: 0.5em;
+	}
+
 	.wrapper {
 		padding: 2em;
 	}
 
+	.index-naslov{
+		margin-top: 2em;
+	}
+
 	.index-projects{
-		grid-column-start: 1;
-	  grid-column-end: 9;
 		margin-top: 2em;
 		margin-bottom: 1em;
 	}
@@ -162,21 +172,23 @@ a:hover{
 		margin-top: 2em;
 	}
 
-	.linksmall {
-	}
-
 	.index-social{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
 		grid-column-start: 1;
 	  grid-column-end: 9;
 		margin-top: 1em;
 		margin-bottom: 6em;
 	}
+
+	.joke{
+		font-size: 5px;
+	}
 }
 
-@media screen and (max-width : 660px) {
+@media screen and (max-width : 700px) {
+
+	.pozadinaGradijent {
+		margin: 0.3em;
+	}
 
 	h1{
 		font-size: 48px;
@@ -191,6 +203,7 @@ a:hover{
 	p {
 		font-size: 20px;
 	}
+
 	 a {
 	 		font-size: 20px;
 	 }
@@ -209,6 +222,7 @@ a:hover{
 	}
 
 	.index-projects{
+		margin-top: 0em;
 		grid-column-start: 1;
 	  grid-column-end: 9;
 	}
