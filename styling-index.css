@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-  background: black;
+  background: #FFAE00;
 	color: white;
 }
 
@@ -104,7 +104,7 @@ a:hover{
 	margin-bottom: 4em;
 }
 
-.index-internal{
+.internal{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -170,13 +170,12 @@ a:hover{
 		grid-column-start: 2;
 	  grid-column-end: 9;
 		margin-top: 2em;
+		margin-bottom: 1em;
 	}
 
 	.index-social{
-		grid-column-start: 1;
-	  grid-column-end: 9;
-		margin-top: 1em;
-		margin-bottom: 6em;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 
 	.joke{
@@ -184,10 +183,63 @@ a:hover{
 	}
 }
 
-@media screen and (max-width : 700px) {
+@media screen and (max-width : 800px) {
+
+
+	h1{
+		font-size: 54px;
+		line-height: 1.1;
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 22px;
+	}
+
+	 a {
+	 		font-size: 22px;
+	 }
+
+
+	.wrapper {
+		padding: 1em;
+	}
+
+	.index-naslov{
+		margin-top: 0;
+	}
+
+	.index-projects{
+		margin-top: 1.5em;
+		grid-column-start: 1;
+	  grid-column-end: 9;
+	}
+
+	.index-social{
+		margin-top: 0em;
+		margin-bottom: 2em;
+	}
+
+	.index-resume{
+		grid-column-start: 1;
+	  grid-column-end: 9;
+		margin-top: 1em;
+		margin-bottom: 1.5em;
+	}
+
+	.margintop {
+		margin-top: 1em;
+	}
+}
+
+@media screen and (max-width : 500px) {
 
 	.pozadinaGradijent {
-		margin: 0.3em;
+		margin: 0.4em;
 	}
 
 	h1{
@@ -208,13 +260,9 @@ a:hover{
 	 		font-size: 20px;
 	 }
 
-	.linksmall{
-		font-size: 20px;
-		width: 100%;
-	}
 
 	.wrapper {
-		padding: 1em;
+		padding: 0.5em;
 	}
 
 	.index-naslov{
@@ -227,24 +275,24 @@ a:hover{
 	  grid-column-end: 9;
 	}
 
+	.internal{
+		margin-top: 0.5em;
+	}
+
+	.index-social{
+		margin-top: 0em;
+		margin-bottom: 2em;
+	}
+
 	.index-resume{
 		grid-column-start: 1;
 	  grid-column-end: 9;
 		margin-top: 1.5em;
-	}
-
-	.index-social{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		grid-column-start: 1;
-	  grid-column-end: 9;
-		margin-top: 1em;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	.margintop {
-		margin-top: 1.5em;
+		margin-top: 1em;
 	}
 }
 
