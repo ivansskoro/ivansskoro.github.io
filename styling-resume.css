@@ -1,8 +1,9 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Spectral', serif;
-	color: #000;
+	font-family: 'Helvetica', serif;
+	color: white;
+	background-color: black;
 	border-top: 0;
 	border-bottom: 0;
 	border-left: 1em;
@@ -18,8 +19,8 @@ body {
 }
 
 ::selection {
-  background: black;
-	color: white;
+  background: white;
+	color: black;
 }
 
 
@@ -63,7 +64,7 @@ p {
 a {
 	font-style: italic;
 	font-size: 1.25em;
-	color: #000;
+	color: white;
 	letter-spacing: 0.5px;
 	line-height: 32px;
 	margin-top: 0;
@@ -104,7 +105,6 @@ a:hover{
   display: grid;
 	max-width: 1200px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	background-color: white;
 	padding-left: 24px;
 	padding-right: 24px;
 	grid-column-gap: 24px;
@@ -112,10 +112,8 @@ a:hover{
 .ime{
 	grid-column-start: 1;
   grid-column-end: 5;
-  background-color: white;
 }
 .linkovi{
-  background-color: white;
 	padding-top: 2em;
 	grid-column-start: 5;
 	grid-column-end: 7;
@@ -124,18 +122,15 @@ a:hover{
 .opis {
 	grid-column-start: 1;
   grid-column-end: 5;
-  background-color: white;
 	margin-bottom: 4em;
 }
 .naslov {
 	grid-column-start: 2;
   grid-column-end: 3;
-  background-color: white;
 }
 .iskustvo{
 	grid-column-start: 3;
   grid-column-end: 7;
-  background-color: white;
 }
 
 @media screen and (min-width : 1800px) {
@@ -173,7 +168,6 @@ a:hover{
 	.naslov {
 		grid-column-start: 1;
 		grid-column-end: 2;
-		background-color: white;
 	}
 }
 
@@ -196,12 +190,10 @@ a:hover{
 	.naslov {
 		grid-column-start: 2;
 	  grid-column-end: 7;
-	  background-color: white;
 	}
 	.iskustvo {
 		grid-column-start: 2;
 		grid-column-end: 7;
-		background-color: white;
 	}
 
 	h4{
