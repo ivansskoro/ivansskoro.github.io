@@ -29,7 +29,7 @@ h1{
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 28px;
 	line-height: 1em;
 	font-weight: normal;
 	margin-top: 1em;
@@ -37,13 +37,15 @@ h2 {
 }
 
 p {
-	font-size: 24px;
-	line-height: 1.55;
+	font-size: 28px;
+	line-height: 1.48;
 	margin: 0;
 }
 
 a {
-	color: #FFAE00;
+	color: #000;
+	font-size: 28px;
+	line-height: 1.4;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -55,38 +57,13 @@ a:hover{
 	background: linear-gradient(90deg, rgba(160,160,160,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-@media (hover: none) {
-   a:link {
-      background: white;
-   }
-}
 
-.joke{
-	font-size: 6px;
-	color: rgb(245,245,245);
-}
-
-.linksmall{
-	font-size: 24px;
-	line-height: 1.4;
-	margin-right: 2em;
-	margin-top: 2em;
-}
 
 .linksmall:hover{
 	background: rgb(130,130,130);
 	background: -moz-linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(0deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 100%);
-}
-
-
-.small-bottom-padding{
-	margin-bottom: 0.2em;
-}
-
-.last{
-	margin-bottom: 1.6em;
 }
 
 .wrapper {
@@ -97,7 +74,7 @@ a:hover{
 	grid-column-gap: 24px;
 }
 .index-naslov{
-	margin-top: 2em;
+	margin-top: 3em;
 	grid-column-start: 1;
   grid-column-end: 9;
 	grid-row-start: 1;
@@ -107,13 +84,13 @@ a:hover{
 .index-projects{
 	grid-column-start: 1;
   grid-column-end: 9;
-	margin-top: 3em;
+	margin-top: 1em;
 }
 
 .index-resume{
 	grid-column-start: 4;
   grid-column-end: 9;
-	margin-top: 3em;
+	margin-top: 5em;
 	margin-bottom: 3em;
 }
 
@@ -124,8 +101,38 @@ a:hover{
 	grid-column-start: 1;
   grid-column-end: 9;
 	margin-top: 2em;
-	margin-bottom: 6em;
+	margin-bottom: 4em;
 }
+
+.index-internal{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	grid-column-start: 1;
+  grid-column-end: 9;
+	margin-bottom: 1em;
+}
+
+.joke{
+	font-size: 6px;
+	color: rgb(245,245,245);
+}
+
+.margindesno {
+	margin-right: 2em;
+}
+
+.margintop {
+	margin-top: 1.5em;
+}
+
+
+@media (hover: none) {
+   a:link {
+      background: white;
+   }
+}
+
 
 
 @media screen and (max-width : 940px) {
@@ -184,6 +191,9 @@ a:hover{
 	p {
 		font-size: 20px;
 	}
+	 a {
+	 		font-size: 20px;
+	 }
 
 	.linksmall{
 		font-size: 20px;
@@ -216,7 +226,11 @@ a:hover{
 		grid-column-start: 1;
 	  grid-column-end: 9;
 		margin-top: 1em;
-		margin-bottom: 6em;
+		margin-bottom: 2em;
+	}
+
+	.margintop {
+		margin-top: 1.5em;
 	}
 }
 
