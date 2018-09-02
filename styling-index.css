@@ -62,8 +62,9 @@ a:hover{
 }
 
 .joke{
-	font-size: 8px;
+	font-size: 6px;
 }
+
 .linksmall{
 	font-size: 24px;
 	line-height: 1.4;
@@ -131,9 +132,11 @@ a:hover{
 	h1{
 		font-size: 60px;
 		line-height: 1.1;
-		margin-bottom: 0.5em;
 	}
 
+	.joke{
+		font-size: 5px;
+	}
 	.wrapper {
 		padding: 2em;
 	}
