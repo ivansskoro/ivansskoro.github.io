@@ -1,22 +1,15 @@
 body {
-	font-family: 'Arial', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: normal;
-	font-size: 1.25em;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	color: #000;
-	letter-spacing: 0.005em;
-	background: rgb(255,86,142);
-	background: -moz-linear-gradient(120deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
-	background: -webkit-linear-gradient(120deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
-	background: linear-gradient(120deg, rgba(255,86,142,1) 0%, rgba(146,81,255,1) 100%);
-	min-height: 100%;
+	background: #FFAE00;
 }
 
 .pozadinaGradijent {
 	background-color: white;
 	margin: 0.8em;
-	min-height: calc(100vh - 1.6em);
 }
 
 ::-webkit-scrollbar {
@@ -29,39 +22,37 @@ body {
 }
 
 h1{
-	font-size: 84px;
+	font-size: 72px;
 	line-height: 1.1;
-	font-weight: normal;
-	margin-bottom: 0.5em;
-	letter-spacing: -0.01em;
+	font-weight: bold;
+	margin-bottom: 0;
 }
 
 h2 {
-	font-size: 48px;
+	font-size: 24px;
 	line-height: 1em;
 	font-weight: normal;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-
 p {
 	font-size: 24px;
-	line-height: 1.5;
+	line-height: 1.55;
 	margin: 0;
 }
 
 a {
-	color: #000;
-	line-height: 1.5;
+	color: #FFAE00;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 a:hover{
 	background: rgb(130,130,130);
-	background: -moz-linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(90deg, rgba(160,160,160,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(1160,160,160,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(90deg, rgba(160,160,160,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 @media (hover: none) {
@@ -70,14 +61,23 @@ a:hover{
    }
 }
 
-
+.joke{
+	font-size: 8px;
+}
 .linksmall{
-	font-size: 28px;
+	font-size: 24px;
 	line-height: 1.4;
-	font-weight: bold;
-	margin-right: 2em;
+	margin-right: 2.em;
 	margin-top: 2em;
 }
+
+.linksmall:hover{
+	background: rgb(130,130,130);
+	background: -moz-linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(0deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 100%);
+}
+
 
 .small-bottom-padding{
 	margin-bottom: 0.2em;
@@ -88,16 +88,14 @@ a:hover{
 }
 
 .wrapper {
-	padding-top: 3em;
-	padding-left: 4em;
-	padding-right: 4em;
+	padding: 4em;
   display: grid;
 	max-width: 1400px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 24px;
 }
 .index-naslov{
-	margin-top: 1em;
+	margin-top: 2em;
 	grid-column-start: 1;
   grid-column-end: 9;
 	grid-row-start: 1;
@@ -107,14 +105,14 @@ a:hover{
 .index-projects{
 	grid-column-start: 1;
   grid-column-end: 9;
-	margin-top: 2em;
+	margin-top: 3em;
 }
 
 .index-resume{
 	grid-column-start: 4;
   grid-column-end: 9;
-	margin-top: 2.4em;
-	margin-bottom: 1.4em;
+	margin-top: 3em;
+	margin-bottom: 3em;
 }
 
 .index-social{
@@ -128,37 +126,16 @@ a:hover{
 }
 
 
-@media screen and (min-width : 860px) and (max-width : 1000px) {
-}
-
 @media screen and (max-width : 940px) {
 
 	h1{
-		font-weight: normal;
 		font-size: 60px;
 		line-height: 1.1;
 		margin-bottom: 0.5em;
 	}
 
-	h2 {
-		font-size: 38px;
-		line-height: 1em;
-		font-weight: normal;
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}
-
-	p {
-		line-height: 1.5;
-	}
-
-	.linksmall{
-			font-size: 24px;
-	}
-
 	.wrapper {
-		padding-left: 2em;
-		padding-right: 2em;
+		padding: 2em;
 	}
 
 	.index-naslov{
@@ -191,36 +168,22 @@ a:hover{
 @media screen and (max-width : 660px) {
 
 	h1{
-		font-weight: normal;
 		font-size: 48px;
 		line-height: 1.1;
-		margin-bottom: 0em;
-	}
-
-	h2 {
-		font-size: 30px;
-		line-height: 1em;
-		font-weight: normal;
-		margin-top: 1em;
-		margin-bottom: 1em;
+		margin-bottom: 0;
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.linksmall{
-			font-size: 24px;
-	}
-
-	.pozadinaGradijent {
-		margin: 0.5em;
+			font-size: 20px;
+			width: 100%;
 	}
 
 	.wrapper {
-		padding-left: 1em;
-		padding-right: 1em;
-		padding-top: 1em;
+		padding: 1em;
 	}
 
 	.index-naslov{
