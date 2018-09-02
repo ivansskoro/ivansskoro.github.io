@@ -63,12 +63,13 @@ a:hover{
 
 .joke{
 	font-size: 6px;
+	color: rgb(245,245,245);
 }
 
 .linksmall{
 	font-size: 24px;
 	line-height: 1.4;
-	margin-right: 2.em;
+	margin-right: 2em;
 	margin-top: 2em;
 }
 
@@ -141,20 +142,20 @@ a:hover{
 		padding: 2em;
 	}
 
-	.index-naslov{
-	}
-
 	.index-projects{
 		grid-column-start: 1;
 	  grid-column-end: 9;
-		margin-top: 1em;
+		margin-top: 2em;
 		margin-bottom: 1em;
 	}
 
 	.index-resume{
 		grid-column-start: 2;
 	  grid-column-end: 9;
-		margin-top: 1em;
+		margin-top: 2em;
+	}
+
+	.linksmall {
 	}
 
 	.index-social{
@@ -176,13 +177,17 @@ a:hover{
 		margin-bottom: 0;
 	}
 
+	h2 {
+		font-size: 20px;
+	}
+
 	p {
 		font-size: 20px;
 	}
 
 	.linksmall{
-			font-size: 20px;
-			width: 100%;
+		font-size: 20px;
+		width: 100%;
 	}
 
 	.wrapper {
