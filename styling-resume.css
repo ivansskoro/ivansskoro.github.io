@@ -64,6 +64,7 @@ a {
 	font-size: 28px;
 	line-height: 1.4;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 a:hover{
