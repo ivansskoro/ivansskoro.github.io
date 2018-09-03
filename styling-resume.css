@@ -13,8 +13,13 @@ body {
 }
 
 ::selection {
-  background: white;
-	color: black;
+  background: black;
+	color: white;
+}
+
+a::selection {
+  background: black;
+	color: #FF0083;
 }
 
 
