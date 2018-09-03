@@ -134,7 +134,7 @@ a:hover{
 
 @media (hover: none) {
    a:link {
-      background: white;
+      background: black;
    }
 }
 
