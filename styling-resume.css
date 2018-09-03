@@ -89,8 +89,10 @@ a:hover{
 }
 
 .top{
-	height: 9.6em;
+	width: 105%;
+	height: 9em;
 	margin-bottom: 8em;
+	margin-left: -2em;
 	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -200,6 +202,7 @@ a:hover{
 
 	.top{
 
+		margin-left: -0.5em;
 			height: 8em;
 		margin-top: -3.5em;
 		margin-bottom: 6em;
