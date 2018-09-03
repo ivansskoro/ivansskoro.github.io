@@ -3,8 +3,8 @@ body {
 	font-weight: normal;
 	margin: 0 auto;
 	padding: 0;
-	color: #FFAE00;
-	background: #FFAE00;
+	color: #FFBF00;
+	background: #FFBF00;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -19,8 +19,13 @@ body {
 }
 
 ::selection {
-  background: #FFAE00;
+  background: black;
 	color: white;
+}
+
+a::selection {
+  background: black;
+	color: #FFBF00;
 }
 
 h1{
@@ -57,7 +62,6 @@ a:hover{
 	background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(180,180,180,1) 100%);
 	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(180,180,180,1) 100%);
 }
-
 
 
 .hoverver:hover{
@@ -137,7 +141,6 @@ a:hover{
       background: black;
    }
 }
-
 
 
 @media screen and (max-width : 940px) {
