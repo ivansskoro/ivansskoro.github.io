@@ -14,7 +14,18 @@ body {
 
 .pozadinaFill {
 	background-color: black;
-	margin-top: 3em;
+	margin-top: 2em;
+}
+
+.pozadinaFill:before {
+  content: " ";
+  position: absolute;
+  z-index: 2;
+	height: 1px;
+  top: 1em;
+	left: 1em;
+	right: 1em;
+  border-top: 1px solid black;
 }
 
 .wrapper {
@@ -214,6 +225,11 @@ a:hover{
 		padding: 1em;
 	}
 
+	.pozadinaFill:before {
+		left: 0.5em;
+		right: 0.5em;
+	}
+
 	.index-naslov{
 		margin-top: 0;
 	}
@@ -264,6 +280,11 @@ a:hover{
 	.wrapper {
 		margin: 0.4em;
 		padding: 0.5em;
+	}
+
+	.pozadinaFill:before {
+		left: 0.4em;
+		right: 0.4em;
 	}
 
 	.index-naslov{
