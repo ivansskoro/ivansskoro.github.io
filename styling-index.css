@@ -14,19 +14,8 @@ body {
 
 .pozadinaFill {
 	background-color: black;
-	margin-top: 2em;
 }
 
-.pozadinaFill:before {
-  content: " ";
-  position: absolute;
-  z-index: 2;
-	height: 1px;
-  top: 1em;
-	left: 1em;
-	right: 1em;
-  border-top: 1px solid black;
-}
 
 .wrapper {
 	margin: 1em;
@@ -34,7 +23,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 24px;
-	border: 1px solid #FFBF00;
+	border-left: 1px solid #FFBF00;
+	border-top: 1px solid #FFBF00;
+	border-bottom: 1px solid #FFBF00;
 }
 
 ::-webkit-scrollbar {
