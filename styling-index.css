@@ -84,6 +84,12 @@ button:hover{
 	line-height: 1.15;
 }
 
+.fluidtypecaption {
+	font-size: 12px;
+	line-height: 1.15;
+}
+
+
 .noHover{
     pointer-events: none;
 }
@@ -93,12 +99,19 @@ button:hover{
 	.fluidtype {
 		font-size: calc(20px + 10 * ((100vw - 375px) / (1600)));
 	}
+	.fluidtypecaption {
+		font-size: calc(12px + 10 * ((100vw - 375px) / (1600)));
+	}
 }
 
 @media screen and (min-width : 1600px) {
 	.fluidtype {
 		font-size: 32px;
 	}
+	.fluidtypecaption {
+		font-size: 14px;
+	}
+
 }
 
 .wrapper {
@@ -115,7 +128,67 @@ button:hover{
 	height: 100vh;
 }
 
-.index-projects{
+.projekti {
+	width: calc(100vw + 2rem);
+	margin-left: -1rem;
+	grid-column-start: 1;
+  grid-column-end: 9;
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+	padding: 0;
+	justify-content: center;
+}
+
+.subprojekt{
+	min-width: 300px;
+	flex-grow: 1;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+:hover.subprojekt{
+	filter: invert(100%);
+}
+
+:hover.subopis{
+	filter: invert(0%);
+}
+
+.tauru{
+	background-image: url("asseti/tauru.png");
+	background-color: white;
+	height: 40vh;
+
+}
+.xemantic{
+	background-image: url("asseti/xemantic.png");
+	background-color: white;
+	height: 40vh;
+
+}
+
+.piccola{
+	background-image: url("asseti/piccola.png");
+	background-color: white;
+	height: 40vh;
+
+}
+
+.subopis{
+	padding: 1rem;
+	color: white;
+	padding-top: 2rem;
+	text-align: left;
+	width: 100%;
+	border-bottom: 1rem solid white;
+	max-width: 100%;
+}
+
+
+.index-fun{
 	grid-column-start: 1;
   grid-column-end: 9;
 	margin-top: 1rem;
@@ -126,7 +199,6 @@ button:hover{
 	grid-column-start: 1;
   grid-column-end: 6;
 	padding-top: 1rem;
-	border-top: 1px solid black;
 }
 
 .internallinks{
@@ -134,16 +206,15 @@ button:hover{
 	grid-column-start: 1;
   grid-column-end: 9;
 	margin-top: 3rem;
-	margin-bottom: 14rem;
+	margin-bottom: 16rem;
 }
 
 .index-social{
-	border-top: 1px solid black;
 	display: block;
 	grid-column-start: 1;
   grid-column-end: 6;
-	padding-top: 1rem;
-	margin-bottom: 14em;
+	padding-top: 6rem;
+	margin-bottom: 6rem;
 }
 
 .slike{
@@ -153,7 +224,6 @@ button:hover{
 	padding-top: 0.5rem;
 	height: 100vh;
 }
-
 
 .margindesno {
 	margin-right: 5rem;
@@ -179,7 +249,7 @@ button:hover{
 	.index-naslov{
 	}
 
-	.index-projects{
+	.index-fun{
 	}
 
 	.index-resume{
@@ -199,7 +269,7 @@ button:hover{
 	.index-naslov{
 	}
 
-	.index-projects{
+	.index-fun{
 		grid-column-start: 1;
 	  grid-column-end: 8;
 	}
@@ -220,7 +290,7 @@ button:hover{
 	.index-naslov{
 	}
 
-	.index-projects{
+	.index-fun{
 		grid-column-start: 1;
 	  grid-column-end: 9;
 	}
@@ -234,6 +304,8 @@ button:hover{
 			grid-column-start: 1;
 		  grid-column-end: 9;
 	}
+	.subprojekt{
+	}
 }
 
 
@@ -242,7 +314,7 @@ button:hover{
 	.index-naslov{
 	}
 
-	.index-projects{
+	.index-fun{
 	}
 
 	.internal{
@@ -272,7 +344,7 @@ button:hover{
 		grid-column-end: 7;
 	}
 
-	.index-projects{
+	.index-fun{
 		grid-column-start: 1;
 		grid-column-end: 6;
 		grid-row-start: 2;
