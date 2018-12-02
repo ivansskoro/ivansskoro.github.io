@@ -89,7 +89,6 @@ button:hover{
 	line-height: 1.15;
 }
 
-
 .noHover{
     pointer-events: none;
 }
@@ -111,7 +110,6 @@ button:hover{
 	.fluidtypecaption {
 		font-size: 14px;
 	}
-
 }
 
 .wrapper {
@@ -147,15 +145,15 @@ button:hover{
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	filter: invert(0%);
+	transition: 0.25s ease-out;
 }
 
 :hover.subprojekt{
 	filter: invert(100%);
+	transition: 0.08s ease-in;
 }
 
-:hover.subopis{
-	filter: invert(0%);
-}
 
 .tauru{
 	background-image: url("asseti/tauru.png");
@@ -174,7 +172,6 @@ button:hover{
 	background-image: url("asseti/piccola.png");
 	background-color: white;
 	height: 40vh;
-
 }
 
 .subopis{
@@ -185,6 +182,10 @@ button:hover{
 	width: 100%;
 	border-bottom: 1rem solid white;
 	max-width: 100%;
+}
+
+:hover.subopis{
+	filter: invert(0%);
 }
 
 
