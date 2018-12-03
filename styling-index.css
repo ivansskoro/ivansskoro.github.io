@@ -37,15 +37,14 @@ h1 {
 a {
 	color: black;
 	text-decoration: none;
+
 	font-style: italic;
 }
+a:hover {
+	transition: 0.1s ease;
+	letter-spacing: -1.4px;
+}
 
-/* a:hover{
-	background: rgb(0,0,0);
-	background: -moz-linear-gradient(90deg, rgba(150,150,15,150) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
-} */
 
 button {
 	font-family: 'Arial', sans-serif;
@@ -57,10 +56,12 @@ button {
 
 .buttonborder {
 	border: 1px solid black;
+	color: white;
+	background-color: black;
 	padding: 0.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	border-radius: 100px;
+	border-radius: 10px;
 }
 
 
@@ -126,74 +127,13 @@ button:hover{
 	height: 100vh;
 }
 
-.projekti {
-	width: calc(100vw + 2rem);
-	margin-left: -1rem;
+
+.index-naslov2{
 	grid-column-start: 1;
   grid-column-end: 9;
-	background-color: black;
-	display: flex;
-	flex-wrap: wrap;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
-	padding: 0;
-	justify-content: center;
-}
-
-.subprojekt{
-	min-width: 300px;
-	flex-grow: 1;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	/* filter: invert(0%); */
-	/* transition: 0.25s ease-out; */
-}
-
-/* :hover.subprojekt{
-	filter: invert(100%);
-	transition: 0.08s ease-in;
-} */
-
-
-.tauru{
-	background-image: url("asseti/tauru.png");
-	background-color: white;
-	height: 40vh;
-
-}
-.xemantic{
-	background-image: url("asseti/xemantic.png");
-	background-color: white;
-	height: 40vh;
-
-}
-
-.piccola{
-	background-image: url("asseti/piccola.png");
-	background-color: white;
-	height: 40vh;
-}
-
-.subopis{
-	padding: 1rem;
-	color: white;
-	padding-top: 2rem;
-	text-align: left;
-	width: 100%;
-	border-bottom: 1rem solid white;
-	max-width: 100%;
-}
-
-:hover.subopis{
-	/* filter: invert(0%); */
-}
-
-
-.index-fun{
-	grid-column-start: 1;
-  grid-column-end: 9;
-	margin-top: 1rem;
-	margin-bottom: 14rem;
+	display: flex;
 }
 
 .index-resume{
@@ -203,40 +143,32 @@ button:hover{
 }
 
 .internallinks{
-	display: block;
+	grid-column-gap: 16px;
 	grid-column-start: 1;
   grid-column-end: 9;
 	margin-top: 3rem;
-	margin-bottom: 16rem;
+	margin-bottom: 12rem;
 }
 
 .index-social{
 	display: block;
 	grid-column-start: 1;
   grid-column-end: 6;
-	padding-top: 6rem;
+	margin-top: 12rem;
 	margin-bottom: 6rem;
 }
 
-.slike{
-	background: black;
-	grid-column-start: 1;
-  grid-column-end: 9;
-	padding-top: 0.5rem;
-	height: 100vh;
+.margindesno {
+	margin-right: 4rem;
 }
 
-.margindesno {
-	margin-right: 5rem;
-}
 .marginbottom {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .margintop {
 	margin-top: 1.5rem;
 }
-
 
 @media (hover: none) {
    a:link {
@@ -246,88 +178,68 @@ button:hover{
 
 @media screen and (max-width : 940px) {
 
-
-	.index-naslov{
-	}
-
-	.index-fun{
-	}
-
 	.index-resume{
 		grid-column-start: 1;
 	  grid-column-end: 7;
 	}
-
 	.index-social{
 			grid-column-start: 1;
 		  grid-column-end: 7;
 	}
-
 }
 
 @media screen and (max-width : 800px) {
 
 	.index-naslov{
+  grid-column-end: 4;
 	}
 
-	.index-fun{
+	.wrapper {
+		padding: 1rem;
+	  display: grid;
+		background-color: white;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 16px;
+	}
+
+
+	.index-naslov2{
 		grid-column-start: 1;
-	  grid-column-end: 8;
+	  grid-column-end: 4;
 	}
 
 	.index-resume{
 		grid-column-start: 1;
-	  grid-column-end: 8;
+	  grid-column-end: 4;
 	}
 
 	.index-social{
 			grid-column-start: 1;
-		  grid-column-end: 8;
+		  grid-column-end: 4;
 	}
 }
 
 @media screen and (max-width : 700px) {
 
-	.index-naslov{
-	}
-
-	.index-fun{
+	.index-naslov2{
 		grid-column-start: 1;
-	  grid-column-end: 9;
+	  grid-column-end: 5;
 	}
 
 	.index-resume{
 		grid-column-start: 1;
-	  grid-column-end: 9;
+	  grid-column-end: 5;
 	}
 
 	.index-social{
 			grid-column-start: 1;
-		  grid-column-end: 9;
-	}
-	.subprojekt{
+		  grid-column-end: 5;
 	}
 }
 
 
 @media screen and (max-width : 500px) {
 
-	.index-naslov{
-	}
-
-	.index-fun{
-	}
-
-	.internal{
-	}
-
-	.index-social{
-	}
-
-	.index-resume{
-		grid-column-start: 1;
-	  grid-column-end: 9;
-	}
 
 	.margintop {
 		margin-top: 1em;
@@ -340,31 +252,25 @@ button:hover{
 	}
 
 	.index-naslov{
-		margin-top: 0;
 		grid-column-start: 1;
-		grid-column-end: 7;
+		grid-column-end: 5;
 	}
 
-	.index-fun{
+	.index-naslov2{
 		grid-column-start: 1;
-		grid-column-end: 6;
-		grid-row-start: 2;
+		grid-column-end: 5;
 	}
 
 	.index-resume{
-		grid-column-start: 3;
-		grid-column-end: 6;
+		grid-column-start: 1;
+		grid-column-end: 5;
 		margin-top: 1em;
 	}
 
 	.index-social {
-		grid-column-start: 7;
-		grid-column-end: 9;
-		grid-row-start: 1;
-		grid-row-end: 4;
+		grid-column-start: 1;
+		grid-column-end: 5;
 	}
 
-	.linksmall {
-		width: 100%;
-	}
+
 }
