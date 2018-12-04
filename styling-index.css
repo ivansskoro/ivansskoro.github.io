@@ -147,10 +147,17 @@ button:hover{
 	flex-wrap: wrap;
 }
 
-.projekti :last-child:not(:nth-child(2)) {
-	margin-top: 2rem;
+.projekti :last-child	 {
+	margin-top: 1rem;
 }
 
+.projekt :first-child{
+	margin-top: 0rem;
+}
+
+.projekt :nth-child(2){
+	margin-top: 0rem;
+}
 
 .index-resume{
 	grid-column-start: 1;
