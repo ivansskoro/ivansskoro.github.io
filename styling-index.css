@@ -132,20 +132,25 @@ button:hover{
 	grid-column-gap: 16px;
 }
 
-.index-naslov{
+.title{
 	grid-column-start: 1;
   grid-column-end: 9;
 	height: 100vh;
 }
 
-
-.index-naslov2{
+.projekti{
 	grid-column-start: 1;
   grid-column-end: 9;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	display: flex;
+	flex-wrap: wrap;
 }
+
+.projekti :last-child:not(:nth-child(2)) {
+	margin-top: 2rem;
+}
+
 
 .index-resume{
 	grid-column-start: 1;
@@ -206,7 +211,7 @@ button:hover{
 	  grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
-	.index-naslov{
+	.title{
 	grid-column-end: 4;
 	}
 	.internallinks{
@@ -214,7 +219,7 @@ button:hover{
 	  grid-column-end: 4;
 	}
 
-	.index-naslov2{
+	.projekti{
 		grid-column-start: 1;
 	  grid-column-end: 4;
 	}
@@ -237,7 +242,7 @@ button:hover{
 	  grid-column-end: 5;
 	}
 
-	.index-naslov2{
+	.projekti{
 		grid-column-start: 1;
 	  grid-column-end: 5;
 	}
@@ -267,12 +272,12 @@ button:hover{
 		max-width: 3000px;
 	}
 
-	.index-naslov{
+	.title{
 		grid-column-start: 1;
 		grid-column-end: 5;
 	}
 
-	.index-naslov2{
+	.projekti{
 		grid-column-start: 1;
 		grid-column-end: 5;
 	}
