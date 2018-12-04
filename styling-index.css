@@ -97,7 +97,7 @@ button:hover{
 }
 
 .fluidtypecaption {
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 1.15;
 	transition: 0.1s ease;
 }
@@ -106,13 +106,12 @@ button:hover{
     pointer-events: none;
 }
 
-
 @media screen and (min-width : 400px) {
 	.fluidtype {
 		font-size: calc(20px + 10 * ((100vw - 375px) / (1600)));
 	}
 	.fluidtypecaption {
-		font-size: calc(12px + 10 * ((100vw - 375px) / (1600)));
+		font-size: calc(13px + 10 * ((100vw - 375px) / (1600)));
 	}
 }
 
@@ -121,7 +120,7 @@ button:hover{
 		font-size: 32px;
 	}
 	.fluidtypecaption {
-		font-size: 14px;
+		font-size: 18px;
 	}
 }
 
@@ -155,7 +154,6 @@ button:hover{
 }
 
 .internallinks{
-	grid-column-gap: 16px;
 	grid-column-start: 1;
   grid-column-end: 9;
 	margin-top: 3rem;
@@ -195,25 +193,26 @@ button:hover{
 	  grid-column-end: 7;
 	}
 	.index-social{
-			grid-column-start: 1;
-		  grid-column-end: 7;
+		grid-column-start: 1;
+	  grid-column-end: 7;
 	}
 }
 
 @media screen and (max-width : 800px) {
 
-	.index-naslov{
-  grid-column-end: 4;
-	}
+
 
 	.wrapper {
-		padding: 1rem;
-	  display: grid;
-		background-color: white;
 	  grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-column-gap: 16px;
 	}
 
+	.index-naslov{
+	grid-column-end: 4;
+	}
+	.internallinks{
+		grid-column-start: 1;
+	  grid-column-end: 4;
+	}
 
 	.index-naslov2{
 		grid-column-start: 1;
@@ -232,6 +231,11 @@ button:hover{
 }
 
 @media screen and (max-width : 700px) {
+
+	.internallinks{
+		grid-column-start: 1;
+	  grid-column-end: 5;
+	}
 
 	.index-naslov2{
 		grid-column-start: 1;
