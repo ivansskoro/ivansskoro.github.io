@@ -147,18 +147,6 @@ button:hover{
 	flex-wrap: wrap;
 }
 
-.projekti :last-child	 {
-	margin-top: 1rem;
-}
-
-.projekt :first-child{
-	margin-top: 0rem;
-}
-
-.projekt :nth-child(2){
-	margin-top: 0rem;
-}
-
 .index-resume{
 	grid-column-start: 1;
   grid-column-end: 6;
@@ -181,7 +169,7 @@ button:hover{
 }
 
 .margindesno {
-	margin-right: 4rem;
+	margin-right: 3rem;
 }
 
 .marginbottom {
@@ -268,9 +256,24 @@ button:hover{
 
 @media screen and (max-width : 500px) {
 
-
 	.margintop {
 		margin-top: 1em;
+	}
+}
+
+
+@media screen and (max-width : 349px) {
+
+	.projekti :last-child	 {
+		margin-top: 1rem;
+	}
+
+	.projekt :first-child{
+		margin-top: 0rem;
+	}
+
+	.projekt :nth-child(2){
+		margin-top: 0rem;
 	}
 }
 
