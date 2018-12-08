@@ -58,8 +58,7 @@ a:hover {
 
 .vertikalno{
 	writing-mode: vertical-lr;
-	text-orientation: upright;
-	letter-spacing: -2px !important;
+	letter-spacing: 0.4px;
 }
 
 .vertikalno:hover{
@@ -67,9 +66,9 @@ a:hover {
 	background: -moz-linear-gradient(0deg, rgba(150,150,15,150) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-linear-gradient(0deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(0deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
-	letter-spacing: -4px !important;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+	letter-spacing: -0.2px !important;
 	padding-left: 0rem !important;
 	padding-right: 0rem !important;
 }
@@ -175,7 +174,6 @@ button:hover{
 }
 
 .mailResume{
-
 	position: fixed;
 	top: 0;
 	height: 100vh;
@@ -185,6 +183,7 @@ button:hover{
 	justify-content: space-around;
 	white-space: nowrap;
 	align-items: flex-end;
+	transform: rotate(180deg);
 }
 
 
