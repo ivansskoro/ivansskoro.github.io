@@ -29,8 +29,7 @@ body {
 }
 
 p {
-	margin-top: 0;
-	margin-bottom: 1rem;
+	margin: 0;
 }
 
 h1 {
@@ -46,8 +45,12 @@ a {
 }
 
 a:hover {
+	font-style: normal;
 	transition: 0.1s ease;
-	letter-spacing: -1.6px;
+	letter-spacing: -0.4px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	background: rgb(0,0,0);
 	background: -moz-linear-gradient(90deg, rgba(150,150,15,150) 0%, rgba(255,255,255,1) 100%);
 	background: -webkit-linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
@@ -56,6 +59,7 @@ a:hover {
 .vertikalno{
 	writing-mode: vertical-lr;
 	text-orientation: upright;
+	letter-spacing: -2px !important;
 }
 
 .vertikalno:hover{
@@ -64,15 +68,19 @@ a:hover {
 	background: -webkit-linear-gradient(0deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(0deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
 	letter-spacing: -4px !important;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0rem !important;
+	padding-right: 0rem !important;
 }
 
 .fluidtype:hover{
-	letter-spacing: -1px;
+	letter-spacing: -1.2px;
 	transition: 0.1s ease;
 }
 
 .fluidtypecaption:hover{
-	letter-spacing: -1.5px;
+	letter-spacing: -1.2spx;
 	transition: 0.1s ease;
 	cursor: default;
 }
@@ -100,13 +108,6 @@ button:hover{
 	background: -webkit-linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
 	cursor: pointer;
-}
-
-.hoverver:hover{
-	background: rgb(0,0,0);
-	background: -moz-linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(90deg, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .fluidtype {
@@ -144,7 +145,7 @@ button:hover{
   display: grid;
 	background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-column-gap: 16px;
+	grid-column-gap: 1rem;
 }
 
 .title{
@@ -154,58 +155,45 @@ button:hover{
 	height: 100vh;
 }
 
-.projekti{
+.projektinaslov {
 	grid-column-start: 2;
-  grid-column-end: 9;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+  grid-column-end: 4;
+}
+
+.projekti{
+	grid-column-start: 4;
+  grid-column-end: 8;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.index-resume{
+.kratkiopis{
 	grid-column-start: 2;
   grid-column-end: 7;
 	grid-row-start: 2;
+	min-height: 14.5rem;
 }
 
-.internallinks{
-	grid-column-start: 8;
-  grid-column-end: 9;
-	grid-row-start: 1;
-	grid-row-end: 3;
+.mailResume{
+
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	right: 1rem;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-around;
 	white-space: nowrap;
 	align-items: flex-end;
-	min-height: 24rem;
 }
 
-.divider{
-	height: 6rem;
-	grid-column-start: 1;
-  grid-column-end: 9;
-}
 
-.instagram {
-	grid-column-start: 2;
-	grid-column-end: 4;
-}
-
-.dribbble {
-	grid-column-start: 4;
-	grid-column-end: 6;
-}
-.medium {
-	grid-column-start: 6;
-	grid-column-end: 8;
-}
-.index-social{
+.social{
 	display: flex;
-	grid-column-start: 2;
+	grid-column-start: 4;
   grid-column-end: 8;
-	margin-top: 12rem;
-	margin-bottom: 6rem;
+	justify-content: space-between;
 }
 
 .margindesno {
@@ -216,8 +204,14 @@ button:hover{
 	margin-bottom: 2rem;
 }
 
-.margintop {
-	margin-top: 1.5rem;
+.divider{
+	height: 4rem;
+	grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+.wrapper :nth-child(8){
+	grid-column-end: 6;
 }
 
 @media (hover: none) {
@@ -226,83 +220,48 @@ button:hover{
    }
 }
 
-@media screen and (max-width : 940px) {
-
-	.index-resume{
-		grid-column-start: 1;
-	  grid-column-end: 7;
-	}
-	.index-social{
-		grid-column-start: 1;
-	  grid-column-end: 7;
-	}
-}
-
-@media screen and (max-width : 800px) {
-
-
-
-	.wrapper {
-	  grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-
-	.title{
-	grid-column-end: 4;
-	}
-	.internallinks{
-		grid-column-start: 1;
-	  grid-column-end: 4;
+@media screen and (max-width : 820px) {
+	.kratkiopis{
+	  grid-column-end: 8;
+		min-height: 13.5rem;
 	}
 
 	.projekti{
-		grid-column-start: 1;
-	  grid-column-end: 4;
 	}
 
-	.index-resume{
-		grid-column-start: 1;
-	  grid-column-end: 4;
+	.social{
+		grid-column-start: 2;
 	}
 
-	.index-social{
-			grid-column-start: 1;
-		  grid-column-end: 4;
+	.divider{
+		height: 3rem;
 	}
 }
-
-@media screen and (max-width : 700px) {
-
-	.internallinks{
-		grid-column-start: 1;
-	  grid-column-end: 5;
-	}
-
-	.projekti{
-		grid-column-start: 1;
-	  grid-column-end: 5;
-	}
-
-	.index-resume{
-		grid-column-start: 1;
-	  grid-column-end: 5;
-	}
-
-	.index-social{
-			grid-column-start: 1;
-		  grid-column-end: 5;
-	}
-}
-
 
 @media screen and (max-width : 500px) {
-
-	.margintop {
-		margin-top: 1em;
+	.kratkiopis{
+	  grid-column-start: 1;
 	}
+
+	.projektinaslov{
+			grid-column-start: 1;
+	}
+	.projekti :first-child{
+		margin-bottom: 1rem;
+		margin-right: 2rem;
+	}
+	.projekti :last-child{
+		margin-bottom: 0rem;
+		margin-right: 0rem;
+	}
+	.social{
+		grid-column-start: 1;
+	}
+
+
 }
 
-
-@media screen and (max-width : 349px) {
+/* @media screen and (max-width : 349px) {
 
 	.projekti :last-child	 {
 		margin-top: 1rem;
@@ -315,32 +274,6 @@ button:hover{
 	.projekt :nth-child(2){
 		margin-top: 0rem;
 	}
-}
-
-@media screen and (min-width : 2400px) {
-	.wrapper{
-		max-width: 3000px;
-	}
-
-	.title{
-		grid-column-start: 1;
-		grid-column-end: 5;
-	}
-
-	.projekti{
-		grid-column-start: 1;
-		grid-column-end: 5;
-	}
-
-	.index-resume{
-		grid-column-start: 1;
-		grid-column-end: 5;
-		margin-top: 1em;
-	}
-
-	.index-social {
-		grid-column-start: 1;
-		grid-column-end: 5;
-	}
+} */
 
 }
