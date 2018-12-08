@@ -82,7 +82,6 @@ a:hover {
 .fluidtypecaption:hover{
 	letter-spacing: -1.2spx;
 	transition: 0.1s ease;
-	cursor: default;
 }
 
 button {
@@ -257,23 +256,3 @@ button:hover{
 	.social{
 		grid-column-start: 1;
 	}
-
-
-}
-
-/* @media screen and (max-width : 349px) {
-
-	.projekti :last-child	 {
-		margin-top: 1rem;
-	}
-
-	.projekt :first-child{
-		margin-top: 0rem;
-	}
-
-	.projekt :nth-child(2){
-		margin-top: 0rem;
-	}
-} */
-
-}
