@@ -218,7 +218,7 @@ button:hover{
 
 @media (hover: none) {
    a:link {
-      background: white;
+      background: rgba(255, 0, 0, 0);
    }
 }
 
@@ -243,10 +243,16 @@ button:hover{
 @media screen and (max-width : 500px) {
 	.kratkiopis{
 	  grid-column-start: 1;
+	  grid-column-end: 9;
 	}
 
 	.projektinaslov{
-			grid-column-start: 1;
+		grid-column-start: 1;
+	}
+
+	.projekti{
+
+	  grid-column-end: 9;
 	}
 	.projekti :first-child{
 		margin-bottom: 1rem;
@@ -258,4 +264,5 @@ button:hover{
 	}
 	.social{
 		grid-column-start: 1;
+	  grid-column-end: 9;
 	}
