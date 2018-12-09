@@ -184,6 +184,7 @@ button:hover{
 	display: flex;
 	white-space: nowrap;
 	align-items: center;
+	transform: rotate(180deg)
 	-webkit-transform: rotate(180deg)
 }
 
@@ -232,6 +233,7 @@ button:hover{
 	}
 
 	.social{
+		padding-bottom: 2rem;
 	}
 
 	.divider{
@@ -257,4 +259,5 @@ button:hover{
 	}
 	.social{
 		grid-column-start: 1;
+		padding-bottom: 1rem;
 	}
