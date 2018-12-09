@@ -18,7 +18,7 @@ body {
 	padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-column-gap: 16px;
+	grid-column-gap: 8px;
 }
 
 .topwrapper {
@@ -48,18 +48,37 @@ body {
 .fluidtype {
 	font-size: 20px;
 	line-height: 1.15;
+	letter-spacing: 0.3px;
+	transition: 0.2s ease;
+}
+
+.fluidtypecaption {
+	font-size: 14px;
+	line-height: 1.15;
+	letter-spacing: 0.3px;
+	transition: 0.2s ease;
+	border-top: 1px solid white;
+	padding-top: 0.5rem;
 }
 
 
 @media screen and (min-width : 400px) {
 	.fluidtype {
-		font-size: calc(20px + 10 * ((100vw - 375px) / (1600)));
+			font-size: calc(20px + 10 * ((100vw - 375px) / (1600)));
+			letter-spacing: calc(0.4px + 0 * ((100vw - 375px) / (1600)));
+		}
+	.fluidtypecaption {
+				font-size: calc(14px + 10 * ((100vw - 375px) / (1600)));
+				letter-spacing: calc(0.6px + 0 * ((100vw - 375px) / (1600)));
+			}
 	}
-}
 
 @media screen and (min-width : 1600px) {
 	.fluidtype {
 		font-size: 32px;
+	}
+	.fluidtypecaption {
+		font-size: 19px;
 	}
 }
 
@@ -68,6 +87,14 @@ body {
       background-color: rgba(0,0,0,0);
    }
 }
+
+
+.fluidtype:hover{
+	letter-spacing: -0.2px;
+	transition: 0.2s ease;
+}
+
+
 
 a::selection {
   background: black;
@@ -95,24 +122,22 @@ p {
 }
 
 a {
+	transition: 0.2s ease;
 	color: white;
 	text-decoration: none;
 	font-style: italic;
+	border-bottom: 1px solid white;
 }
 
 a:hover{
+	font-style: normal;
+	transition: 0.2s ease;
 	background: rgb(0,0,0);
 	background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(150,150,150,1) 100%);
 	background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(150,150,150,1) 100%);
 	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(150,150,150,1) 100%);
 }
 
-.hoverver:hover{
-	background: rgb(0,0,0);
-	background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(150,150,150,1) 100%);
-	background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(150,150,150,1) 100%);
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(150,150,150,1) 100%);
-}
 
 .naslovlink{
 	margin-bottom: 3rem;
@@ -154,16 +179,16 @@ a:hover{
 
 .naslov {
 	grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 7;
 	padding-top: 1rem;
 	margin-bottom: 1rem;
-	border-top: 1px solid white;
+	display: flex;
 }
 
 .iskustvo{
 	grid-column-start: 1;
-  grid-column-end: 6;
-	margin-bottom: 2em;
+  grid-column-end: 7;
+	margin-bottom: 4rem;
 }
 
 @media screen and (max-width : 1200px) {
@@ -271,6 +296,10 @@ a:hover{
 
 
 @media screen and (max-width : 500px) {
+	.ime{
+		grid-column-start: 1;
+	  grid-column-end: 4;
+	}
 
 	.top{
 		margin-top: -2.3em;
