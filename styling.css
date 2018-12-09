@@ -21,7 +21,7 @@ body {
 }
 
 ::selection {
-  background: black;
+  background: white;
 	color: white;
 }
 
@@ -173,7 +173,7 @@ button:hover{
 	grid-column-start: 1;
   grid-column-end: 6;
 	grid-row-start: 2;
-	height: 92vh;
+	height: 24vh;
 	display: flex;
 }
 
@@ -181,20 +181,15 @@ button:hover{
 	color: red;
 }
 
-.mailResume{
-	display: -webkit-flex;
+.desniSidebarLinkovi{
 	display: flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
 	position: fixed;
+	align-items: center;
 	top: 0;
 	height: 100vh;
 	right: 1rem;
-	width: 2.5rem;
 	display: flex;
-	justify-content: space-evenly;
 	transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
 }
 
 .strelicadolje{
@@ -260,6 +255,10 @@ button:hover{
 	  grid-column-end: 7;
 	}
 
+	.opisprojekta{
+	  grid-column-end: 7;
+	}
+
 	.projektinaslov{
 	}
 
@@ -289,4 +288,37 @@ button:hover{
 	.social{
 		margin-bottom: 3rem;
 	}
+}
+
+
+/* PICCOLA */
+
+.headerimage{
+	background-image: url(asseti/piccola.png);
+	background-position: center;
+	background-size: contain;
+	height: 86vh;
+	background-repeat: no-repeat;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: -4rem;
+}
+
+.headerprojekt{
+	margin: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headerprojekt :last-child{
+	margin-right: 0;
+}
+
+.opisprojekta{
+	grid-column-start: 2;
+  grid-column-end: 8;
+	display: flex;
+	text-align: center;
+	justify-content: center;
 }
