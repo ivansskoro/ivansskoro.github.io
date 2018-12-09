@@ -13,7 +13,7 @@ body {
 	background: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	letter-spacing: 0.5px;
+	text-align: left;
 }
 
 ::-webkit-scrollbar {
@@ -92,10 +92,11 @@ button {
 
 .buttontitle {
 	padding: 0.5rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	border: 1px solid black;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	border: 2px solid black;
 	border-radius: 100px;
+	margin-right: 2rem;
 }
 
 button:hover{
@@ -109,17 +110,26 @@ button:hover{
 .fluidtype {
 	font-size: 20px;
 	line-height: 1.15;
+	letter-spacing: 0.3px;
 	transition: 0.2s ease;
 }
 
+.fluidtypecaption {
+	font-size: 14px;
+	line-height: 1.15;
+	letter-spacing: 0.3px;
+	transition: 0.2s ease;
+}
 
 
 @media screen and (min-width : 400px) {
 	.fluidtype {
 		font-size: calc(20px + 10 * ((100vw - 375px) / (1600)));
+		letter-spacing: calc(0.4px + 0 * ((100vw - 375px) / (1600)));
 	}
 	.fluidtypecaption {
-		font-size: calc(13px + 10 * ((100vw - 375px) / (1600)));
+		font-size: calc(14px + 10 * ((100vw - 375px) / (1600)));
+		letter-spacing: calc(0.6px + 0 * ((100vw - 375px) / (1600)));
 	}
 }
 
@@ -128,7 +138,7 @@ button:hover{
 		font-size: 32px;
 	}
 	.fluidtypecaption {
-		font-size: 18px;
+		font-size: 19px;
 	}
 }
 
@@ -147,17 +157,15 @@ button:hover{
 	height: 100vh;
 }
 
-.projektinaslov {
-	grid-column-start: 1;
-  grid-column-end: 3;
-}
+
 
 .projekti{
-	grid-column-start: 3;
+	grid-column-start: 1;
   grid-column-end: 6;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 .kratkiopis{
@@ -182,14 +190,17 @@ button:hover{
 .strelicadolje{
 	grid-column-start: 8;
 	grid-row-start: 1;
-	height: 98vh;
-	align-items: flex-end;
+	height: 100vh;
+	align-items: flex-start;
+	justify-content: flex-end;
 	display: flex;
-	margin-left: -3rem;
+	overflow: hidden;
 }
 
 .strelicadoljetekst{
 	padding: 2rem;
+	margin-top: -2rem;
+	margin-right: -1.5rem
 }
 
 .strelicadoljetekst:hover{
@@ -225,9 +236,7 @@ button:hover{
   grid-column-end: 9;
 }
 
-.wrapper :nth-child(5){
-	grid-column-end: 6;
-}
+
 
 @media (hover: none) {
    a:link {
@@ -261,20 +270,9 @@ button:hover{
 	  grid-column-end: 9;
 	}
 
-	.projektinaslov{
-	}
-
 	.projekti{
-		grid-column-start: 4;
+		grid-column-start: 1;
 	  grid-column-end: 9;
-	}
-	.projekti :first-child{
-		margin-bottom: 1rem;
-		margin-right: 2rem;
-	}
-	.projekti :last-child{
-		margin-bottom: 0rem;
-		margin-right: 0rem;
 	}
 
 	.social{
