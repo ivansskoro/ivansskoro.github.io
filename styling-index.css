@@ -44,6 +44,10 @@ a {
 	font-style: italic;
 }
 
+a:focus {
+	letter-spacing: 0;
+}
+
 a:hover {
 	border-radius: 20px;
 	font-style: normal;
@@ -280,5 +284,9 @@ button:hover{
 	.projekti :last-child{
 		margin-bottom: 0rem;
 		margin-right: 0rem;
+	}
+
+	.social{
+		margin-bottom: 3rem;
 	}
 }
