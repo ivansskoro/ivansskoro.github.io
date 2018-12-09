@@ -200,23 +200,24 @@ button:hover{
 .strelicadolje{
 	grid-column-start: 8;
 	grid-row-start: 1;
-	height: 100vh;
+	height: 10vh;
 	align-items: flex-start;
 	justify-content: flex-end;
 	display: flex;
 	overflow: hidden;
+	z-index: 2;
 }
 
 .strelicadoljetekst{
 	padding: 2rem;
+	display: flex;
+	margin-right: -1.5rem;
 	margin-top: -2rem;
-	margin-right: -1.5rem
 }
 
 .strelicadoljetekst:hover{
 	color: white;
 	cursor: default;
-	letter-spacing: 0px;
 }
 
 
