@@ -51,11 +51,10 @@ a:hover {
 	letter-spacing: -0.4px;
 	margin-left: -1rem;
 	padding-left: 1rem;
-	padding-right: 1rem;
 	background: rgb(0,0,0);
-	background: -moz-linear-gradient(90deg, rgba(150,150,15,150) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .vertikalno{
@@ -65,14 +64,15 @@ a:hover {
 
 .vertikalno:hover{
 	background: rgb(0,0,0);
-	background: -moz-linear-gradient(180deg, rgba(150,150,15,150) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(180deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	letter-spacing: -0.2px !important;
+	background: -moz-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 0 !important;
 	padding-left: 0rem !important;
-	padding-right: 0rem !important;
+	letter-spacing: -0.2px !important;
 }
 
 .fluidtype:hover{
@@ -83,6 +83,8 @@ a:hover {
 .fluidtypecaption:hover{
 	letter-spacing: -1px;
 	transition: 0.1s ease;
+	margin-left: -0.8rem;
+	padding-left: 0.8rem;
 }
 
 button {
@@ -189,7 +191,7 @@ button:hover{
 
 .social{
 	display: flex;
-	grid-column-start: 4;
+	grid-column-start: 2;
   grid-column-end: 8;
 	justify-content: space-between;
 }
@@ -228,7 +230,6 @@ button:hover{
 	}
 
 	.social{
-		grid-column-start: 2;
 	}
 
 	.divider{
