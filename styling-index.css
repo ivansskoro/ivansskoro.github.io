@@ -96,12 +96,11 @@ button {
 }
 
 .buttontitle {
-	color: white;
-	background-color: black;
 	padding: 0.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	border-radius: 100px;
+	border: 1px solid black;
+	border-radius: 10px;
 }
 
 button:hover{
@@ -194,6 +193,9 @@ button:hover{
 	grid-column-start: 2;
   grid-column-end: 8;
 	justify-content: space-between;
+	height: 100vh;
+	align-items: flex-end;
+	padding-bottom: 4rem;
 }
 
 .margindesno {
@@ -210,7 +212,7 @@ button:hover{
   grid-column-end: 9;
 }
 
-.wrapper :nth-child(8){
+.wrapper :nth-child(6){
 	grid-column-end: 6;
 }
 
