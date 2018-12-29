@@ -3,7 +3,6 @@ html {
 	font-size: 62.5%;
 }
 
-
 body {
 	font-family: 'Arial', sans-serif;
 	font-weight: normal;
@@ -48,12 +47,12 @@ a {
 a:hover {
 	font-style: normal;
 	background: rgb(0,0,0);
-	background: -moz-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
 }
 
-.fluidtype:hover{
+.fluidtypespacing:hover{
 	letter-spacing: -0.2px;
 	transition: 0.2s ease;
 }
@@ -65,6 +64,10 @@ a:hover {
 	padding-left: 0.8rem;
 }
 
+.fluidtypecaptionspacing:hover{
+	letter-spacing: -0.2px;
+	transition: 0.2s ease;
+}
 
 .vertikalno{
 	writing-mode: vertical-lr;
@@ -76,12 +79,10 @@ a:hover {
 	transition: 0.2s ease;
 	background: rgb(0,0,0);
 	letter-spacing: -0.3px !important;
-	background: -moz-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
 }
-
-
 
 button {
 	font-family: 'Arial', sans-serif;
@@ -97,14 +98,14 @@ button {
 	padding-right: 1.5rem;
 	border: 2px solid black;
 	border-radius: 100px;
-	margin-right: 2rem;
+	background-color: transparent;
 }
 
 button:hover{
 	background: rgb(0,0,0);
-	background: -moz-linear-gradient(90deg, rgba(150,150,15,150) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
+	background: -moz-linear-gradient(90deg, rgba(150,150,15,150) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,0) 100%);
 	cursor: pointer;
 }
 
@@ -120,7 +121,13 @@ button:hover{
 	line-height: 1.15;
 	letter-spacing: 0.3px;
 	transition: 0.2s ease;
-	-webkit-transition: 0.2s ease;
+}
+
+.fluidtypenaslov {
+	font-size: 26px;
+	line-height: 1.10;
+	letter-spacing: 0.25px;
+	transition: 0.2s ease;
 }
 
 
@@ -131,7 +138,11 @@ button:hover{
 	}
 	.fluidtypecaption {
 		font-size: calc(14px + 10 * ((100vw - 375px) / (1600)));
-		letter-spacing: calc(0.6px + 0 * ((100vw - 375px) / (1600)));
+		letter-spacing: calc(0.5px + 0 * ((100vw - 375px) / (1600)));
+	}
+	.fluidtypenaslov {
+		font-size: calc(26px + 10 * ((100vw - 375px) / (1600)));
+		letter-spacing: calc(0.35px + 0 * ((100vw - 375px) / (1600)));
 	}
 }
 
@@ -142,6 +153,9 @@ button:hover{
 	.fluidtypecaption {
 		font-size: 19px;
 	}
+	.fluidtypenaslov {
+		font-size: 44px;
+	}
 }
 
 .wrapper {
@@ -149,7 +163,6 @@ button:hover{
   display: grid;
 	background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-column-gap: 1rem;
 }
 
 .title{
@@ -159,26 +172,28 @@ button:hover{
 	height: 100vh;
 }
 
-
-.projekti{
-	grid-column-start: 1;
-  grid-column-end: 6;
+.funprojekti{
+	margin-top: 10rem;
+	margin-bottom: 6rem;
+	grid-column-start: 3;
+  grid-column-end: 7;
+	padding: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
+	background-color: #F0F1F2;
+	text-align: center;
 }
 
 .kratkiopis{
+	margin-top: 14rem;
+	margin-bottom: 8rem;
 	grid-column-start: 1;
-  grid-column-end: 6;
-	grid-row-start: 2;
-	height: 24vh;
+  grid-column-end: 5;
 	display: flex;
-}
-
-.special:hover{
-	color: red;
+	align-items: flex-end;
 }
 
 .desniSidebarLinkovi{
@@ -188,44 +203,103 @@ button:hover{
 	top: 0;
 	height: 100vh;
 	right: 1rem;
-	display: flex;
 	transform: rotate(180deg);
+	z-index: 100;
 }
 
-.strelicadolje{
-	grid-column-start: 8;
-	grid-row-start: 1;
-	height: 10vh;
-	align-items: flex-start;
-	justify-content: flex-end;
+.wrap16{
+	grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.wrap27{
+	grid-column-start: 2;
+  grid-column-end: 7;
+}
+
+.wrap49{
+	grid-column-start: 4;
+  grid-column-end: 9;
+}
+
+.wrap38{
+	grid-column-start: 3;
+  grid-column-end: 8;
+}
+
+.subprojekt{
+	margin-top: -3rem;
+	z-index: 20;
+}
+
+.projekt1wrap{
+	height: 70vh;
+	background-color: #F2F2F2;
+}
+
+.projekt2wrap{
+	height: 70vh;
+	background-color: #F1EDF2;
+}
+
+.projektopis{
+	height: 70vh;
 	display: flex;
-	overflow: hidden;
-	z-index: 2;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s ease;
+	text-align: center;
+	opacity: 0;
+	transition: 0.2s 0.04s;
+	background-color: white;
+	position: relative;
+	z-index: 10;
+	user-select: none;
 }
 
-.strelicadoljetekst{
-	padding: 2rem;
-	display: flex;
-	margin-right: -1.5rem;
-	margin-top: -2rem;
+.projekt1back{
+	height: 100%;
+	background-image: url(asseti/piccola.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -70vh;
+	position: relative;
+	z-index: 4;
 }
 
-.strelicadoljetekst:hover{
-	color: white;
-	cursor: default;
+.projekt2back{
+	height: 100%;
+	background-image: url(asseti/xemantic.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin-top: -70vh;
+	z-index: 4;
 }
 
+.projekt1wrap:hover .projektopis {
+	opacity: 1;
+	transition: 0.2s 0.04s;
+}
+
+.projekt2wrap:hover .projektopis {
+	opacity: 1;
+	transition: 0.2s 0.04s;
+}
 
 .social{
 	display: flex;
 	grid-column-start: 1;
   grid-column-end: 9;
-	height: 73vh;
 	align-items: flex-end;
 }
 
 .flexdivider{
 	width: 0.7rem;
+	height: 0.7rem;
 }
 
 .margindesno {
@@ -237,7 +311,7 @@ button:hover{
 }
 
 .divider{
-	height: 3rem;
+	height: 5rem;
 	grid-column-start: 1;
   grid-column-end: 9;
 }
@@ -259,17 +333,6 @@ button:hover{
 	  grid-column-end: 7;
 	}
 
-	.projektinaslov{
-	}
-
-	.projekti{
-	  grid-column-end: 7;
-	}
-
-	.strelicadolje{
-		display: none;
-	}
-
 	.divider{
 		height: 2rem;
 	}
@@ -280,39 +343,28 @@ button:hover{
 	  grid-column-end: 9;
 	}
 
-	.projekti{
-		grid-column-start: 1;
-	  grid-column-end: 9;
-	}
-
 	.social{
 		margin-bottom: 3rem;
 	}
 }
 
 
-/* PICCOLA */
-
-.headerimage{
-	background-image: url(asseti/piccola.png);
-	background-position: center;
-	background-size: contain;
-	height: 86vh;
-	background-repeat: no-repeat;
-	max-width: 600px;
-	margin: 0 auto;
-	margin-top: -4rem;
+.headerImage{
+background-image: url(asseti/piccola.jpg);
+background-position: center;
+background-size: cover;
+height: 75vh;
+background-repeat: no-repeat;
+max-width: 800px;
+margin: 0 auto;
+margin-top: 2rem;
+margin-bottom: 5rem;
 }
 
-.headerprojekt{
-	margin: 1rem;
+.headerProjekt{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-}
-
-.headerprojekt :last-child{
-	margin-right: 0;
+	margin: 1rem;
 }
 
 .opisprojekta{
