@@ -173,8 +173,8 @@ button:hover{
 }
 
 .funprojekti{
-	margin-top: 10rem;
-	margin-bottom: 6rem;
+	margin-top: 18rem;
+	margin-bottom: 18rem;
 	grid-column-start: 3;
   grid-column-end: 7;
 	padding: 1rem;
@@ -188,7 +188,7 @@ button:hover{
 }
 
 .kratkiopis{
-	margin-top: 14rem;
+	margin-top: 0rem;
 	margin-bottom: 8rem;
 	grid-column-start: 1;
   grid-column-end: 5;
@@ -326,8 +326,6 @@ button:hover{
 @media screen and (max-width : 860px) {
 	.kratkiopis{
 	  grid-column-end: 7;
-		margin-top: 8rem;
-		margin-bottom: 3rem;
 	}
 
 	.funprojekti{
@@ -366,7 +364,8 @@ button:hover{
 	}
 
 	.funprojekti{
-		margin-top: 8rem;
+		margin-top: 14rem;
+		margin-bottom: 14rem;
 	}
 
 	.wrap16{
