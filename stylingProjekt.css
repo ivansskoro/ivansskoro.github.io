@@ -1,0 +1,46 @@
+
+.headerProjekt{
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+	align-items: center;
+}
+
+.headerImage{
+	background-position: center;
+	background-size: cover;
+	height: 75vh;
+	width: 85%;
+	background-repeat: no-repeat;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+}
+
+.piccolaBack{
+		background-image: url(asseti/piccola.jpg);
+}
+
+.xemanticBack{
+		background-image: url(asseti/xemantic.jpg);
+}
+
+.headerImage{
+	background-position: center;
+	background-size: cover;
+	height: 75vh;
+	background-repeat: no-repeat;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+}
+
+.opisprojekta{
+	grid-column-start: 2;
+  grid-column-end: 8;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}

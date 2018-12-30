@@ -109,7 +109,6 @@ button:hover{
 	cursor: pointer;
 }
 
-
 .fluidtypecaption {
 	font-size: 14px;
 	line-height: 1.15;
@@ -204,6 +203,17 @@ button:hover{
 	top: 0;
 	height: 100vh;
 	right: 1rem;
+	transform: rotate(180deg);
+	z-index: 100;
+}
+
+.lijeviSidebarLinkovi{
+	display: flex;
+	position: fixed;
+	align-items: center;
+	top: 0;
+	height: 100vh;
+	left: 1rem;
 	transform: rotate(180deg);
 	z-index: 100;
 }
@@ -348,9 +358,6 @@ button:hover{
 		grid-column-start: 3;
 	  grid-column-end: 9;
 	}
-
-
-
 }
 
 @media screen and (max-width : 460px) {
@@ -381,31 +388,4 @@ button:hover{
 		grid-column-start: 2;
 	  grid-column-end: 9;
 	}
-}
-
-.headerProjekt{
-	display: flex;
-	justify-content: space-between;
-	margin: 1rem;
-	align-items: center;
-}
-
-.headerImage{
-	background-image: url(asseti/piccola.jpg);
-	background-position: center;
-	background-size: cover;
-	height: 75vh;
-	background-repeat: no-repeat;
-	max-width: 800px;
-	margin: 0 auto;
-	margin-top: 2rem;
-	margin-bottom: 5rem;
-}
-
-.opisprojekta{
-	grid-column-start: 2;
-  grid-column-end: 8;
-	display: flex;
-	text-align: center;
-	justify-content: center;
 }
