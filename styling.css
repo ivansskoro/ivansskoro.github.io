@@ -358,6 +358,7 @@ button:hover{
 	}
 }
 
+
 @media screen and (max-width : 460px) {
 	.kratkiopis{
 	  grid-column-end: 9;
@@ -387,4 +388,23 @@ button:hover{
 		grid-column-start: 2;
 	  grid-column-end: 9;
 	}
+}
+
+
+@media (-moz-touch-enabled: 1), (pointer:coarse) {
+	.posebanLink {
+			pointer-events: none;
+			display: block;
+			height: 70vh;
+			width: 100%;
+			margin-bottom: -70vh;
+	}
+}
+
+.no-touch .posebanLink {
+    pointer-events: none;
+		display: block;
+		height: 70vh;
+		width: 100%;
+		margin-bottom: -70vh;
 }
