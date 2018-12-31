@@ -390,21 +390,24 @@ button:hover{
 	}
 }
 
+.posebanLink {
+	pointer-events: none;
+}
 
 @media (-moz-touch-enabled: 1), (pointer:coarse) {
 	.posebanLink {
-			pointer-events: none;
+			pointer-events: all;
 			display: block;
 			height: 70vh;
 			width: 100%;
 			margin-bottom: -70vh;
 	}
 }
-
+/*
 .no-touch .posebanLink {
     pointer-events: none;
 		display: block;
 		height: 70vh;
 		width: 100%;
 		margin-bottom: -70vh;
-}
+} */
