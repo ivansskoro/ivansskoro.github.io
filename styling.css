@@ -118,7 +118,7 @@ button:hover{
 
 .fluidtype {
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.10;
 	letter-spacing: 0.3px;
 	transition: 0.2s ease;
 }
@@ -321,6 +321,16 @@ button:hover{
    a:link {
       background: rgba(255, 0, 0, 0);
    }
+
+ 	.posebanLink {
+ 			pointer-events: all;
+ 			display: block;
+ 			height: 70vh;
+ 			width: 100%;
+ 			margin-bottom: -70vh;
+ 			position: absolute;
+ 			z-index: 100;
+	 }
 }
 
 @media screen and (max-width : 860px) {
@@ -405,12 +415,3 @@ button:hover{
 			z-index: 100;
 	}
 }
-
-/*
-.no-touch .posebanLink {
-    pointer-events: none;
-		display: block;
-		height: 70vh;
-		width: 100%;
-		margin-bottom: -70vh;
-} */

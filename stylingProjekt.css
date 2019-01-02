@@ -1,3 +1,10 @@
+body {
+	background-color: #F7F7F7;
+}
+
+.wrapper{
+	background-color: #F7F7F7;
+}
 
 .headerProjekt{
 	display: flex;
@@ -19,15 +26,22 @@
 }
 
 .piccolaBack{
-		background-image: url(asseti/piccola.jpg);
+		background-image: url(asseti/piccolaFull.jpg);
+		background-color: white;
+			background-position: center;
+}
+
+.piccola2Back{
+		background-image: url(asseti/piccola2.jpg);
 }
 
 .xemanticBack{
-		background-image: url(asseti/xemantic.jpg);
+		background-image: url(asseti/xemanticFull.jpg);
+		background-color: white;
+		background-position: center;
 }
 
 .headerImage{
-	background-position: center;
 	background-size: cover;
 	height: 75vh;
 	background-repeat: no-repeat;
@@ -43,4 +57,17 @@
 	display: flex;
 	text-align: center;
 	justify-content: center;
+	background-color: none;
+	margin-bottom: 5rem;
+}
+
+@media screen and (max-width : 900px){
+	.headerImage{
+		background-size: contain;
+	}
+
+	.piccola2Back{
+			background-position: top;
+	}
+
 }
