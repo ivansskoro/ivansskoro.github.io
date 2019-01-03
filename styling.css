@@ -189,11 +189,16 @@ button:hover{
 
 .kratkiopis{
 	margin-top: 0rem;
-	margin-bottom: 8rem;
-	grid-column-start: 1;
-  grid-column-end: 5;
+	margin-bottom: 18rem;
+	grid-column-start: 3;
+  grid-column-end: 7;
 	display: flex;
 	align-items: flex-end;
+	text-align: right;
+}
+
+.kratkiopis:hover {
+	text-align: left;
 }
 
 .desniSidebarLinkovi{
@@ -202,8 +207,7 @@ button:hover{
 	align-items: center;
 	top: 0;
 	height: 100vh;
-	width: 2rem;
-	right: 1rem;
+	right: 0.5rem;
 	transform: rotate(180deg);
 	z-index: 100;
 }
@@ -215,19 +219,19 @@ button:hover{
 	top: 0;
 	height: 100vh;
 	width: 2rem;
-	left: 1rem;
+	left: 0.5rem;
 	transform: rotate(180deg);
 	z-index: 100;
 }
 
-.wrap16{
+.wrap17{
 	grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 7;
 }
 
-.wrap27{
+.wrap28{
 	grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-end: 8;
 }
 
 .wrap38{
@@ -337,7 +341,9 @@ button:hover{
 
 @media screen and (max-width : 860px) {
 	.kratkiopis{
-	  grid-column-end: 7;
+		grid-column-start: 2;
+	  grid-column-end: 8;
+		margin-bottom: 8rem;
 	}
 
 	.funprojekti{
@@ -349,12 +355,12 @@ button:hover{
 		height: 2rem;
 	}
 
-	.wrap16{
+	.wrap17{
 		grid-column-start: 1;
 	  grid-column-end: 7;
 	}
 
-	.wrap27{
+	.wrap28{
 		grid-column-start: 2;
 	  grid-column-end: 8;
 	}
@@ -373,7 +379,11 @@ button:hover{
 
 @media screen and (max-width : 460px) {
 	.kratkiopis{
-	  grid-column-end: 9;
+
+			grid-column-start: 1;
+		  grid-column-end: 9;
+			text-align: left;
+
 	}
 
 	.funprojekti{
@@ -381,12 +391,12 @@ button:hover{
 		margin-bottom: 14rem;
 	}
 
-	.wrap16{
+	.wrap17{
 		grid-column-start: 1;
 	  grid-column-end: 8;
 	}
 
-	.wrap27{
+	.wrap28{
 		grid-column-start: 2;
 	  grid-column-end: 9;
 	}
