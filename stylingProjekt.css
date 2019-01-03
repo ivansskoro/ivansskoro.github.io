@@ -15,24 +15,29 @@ body {
 
 .headerImage{
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	height: 75vh;
-	width: 85%;
+	width: 100%;
 	background-repeat: no-repeat;
-	max-width: 1000px;
 	margin: 0 auto;
-	margin-top: 2rem;
 	margin-bottom: 5rem;
+	grid-column-start: 2;
+	grid-column-end: 8;
 }
 
 .piccolaBack{
-		background-image: url(asseti/piccolaFull.jpg);
-		background-color: white;
-			background-position: center;
+	background-image: url(asseti/piccolaFull.jpg);
+	background-color: white;
+	background-position: center;
 }
 
-.piccola2Back{
-		background-image: url(asseti/piccola2.jpg);
+img {
+	width: 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 5rem;
+	grid-column-start: 2;
+	grid-column-end: 8;
+	margin-top: 4.5rem;
 }
 
 .xemanticBack{
@@ -41,33 +46,23 @@ body {
 		background-position: center;
 }
 
-.headerImage{
-	background-size: cover;
-	height: 75vh;
-	background-repeat: no-repeat;
-	max-width: 1000px;
-	margin: 0 auto;
-	margin-top: 2rem;
-	margin-bottom: 5rem;
-}
-
 .opisprojekta{
 	grid-column-start: 2;
   grid-column-end: 8;
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	background-color: none;
-	margin-bottom: 5rem;
 }
 
-@media screen and (max-width : 900px){
+@media screen and (max-width : 600px){
 	.headerImage{
-		background-size: contain;
+		grid-column-start: 1;
+		grid-column-end: 9;
 	}
 
-	.piccola2Back{
-			background-position: top;
+	img{
+		grid-column-start: 1;
+		grid-column-end: 9;
 	}
 
 }
