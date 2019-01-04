@@ -7,6 +7,11 @@ body {
 	margin-bottom: 10rem;
 }
 
+::selection {
+  background: #F7F7F7;
+	color: #F7F7F7;
+}
+
 .emailProjekt{
 	position: fixed;
 	z-index: 99;
