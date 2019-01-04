@@ -124,12 +124,11 @@ button:hover{
 }
 
 .fluidtypenaslov {
-	font-size: 24px;
+	font-size: 28px;
 	line-height: 1.10;
 	letter-spacing: 0.25px;
 	transition: 0.2s ease;
 }
-
 
 @media screen and (min-width : 400px) {
 	.fluidtypecaption {
@@ -141,7 +140,7 @@ button:hover{
 		letter-spacing: calc(0.4px + 0 * ((100vw - 375px) / (1600)));
 	}
 	.fluidtypenaslov {
-		font-size: calc(26px + 10 * ((100vw - 375px) / (1600)));
+		font-size: calc(28px + 10 * ((100vw - 375px) / (1600)));
 		letter-spacing: calc(0.35px + 0 * ((100vw - 375px) / (1600)));
 	}
 }
@@ -219,7 +218,7 @@ button:hover{
 	top: 0;
 	height: 100vh;
 	width: 2rem;
-	left: 0.5rem;
+	left: 1rem;
 	transform: rotate(180deg);
 	z-index: 100;
 }
@@ -309,6 +308,10 @@ button:hover{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-bottom: -0.4rem;
+}
+
+.flexCenter{
+	justify-content: center;
 }
 
 .flexdivider{
@@ -409,6 +412,11 @@ button:hover{
 	.wrap49{
 		grid-column-start: 2;
 	  grid-column-end: 9;
+	}
+
+	.flexdivider{
+		width: 0.6rem;
+		height: 0.6rem;
 	}
 }
 
