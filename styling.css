@@ -73,6 +73,7 @@ a:hover {
 	writing-mode: vertical-lr;
 	transition: 0.2s ease;
 	letter-spacing: 1px !important;
+	margin-top: 3vh;
 }
 
 .vertikalno:hover{
@@ -172,8 +173,7 @@ button:hover{
 }
 
 .funprojekti{
-	margin-top: 18rem;
-	margin-bottom: 18rem;
+	margin-top: 28vh;
 	grid-column-start: 3;
   grid-column-end: 7;
 	padding: 1rem;
@@ -187,17 +187,17 @@ button:hover{
 }
 
 .kratkiopis{
+	height: 82vh;
 	margin-top: 0rem;
-	margin-bottom: 18rem;
-	grid-column-start: 3;
-  grid-column-end: 7;
+	grid-column-start: 1;
+  grid-column-end: 5;
 	display: flex;
-	align-items: flex-end;
-	text-align: right;
+	align-items: center;
+	min-height: 15rem;
 }
 
-.kratkiopis:hover {
-	text-align: left;
+.kratkiopisparagraf:hover {
+	text-align: center;
 }
 
 .desniSidebarLinkovi{
@@ -223,25 +223,12 @@ button:hover{
 	z-index: 100;
 }
 
-.wrap17{
-	grid-column-start: 1;
-  grid-column-end: 7;
-}
 
-.wrap28{
-	grid-column-start: 2;
-  grid-column-end: 8;
-}
-
-.wrap38{
+.wrap39{
 	grid-column-start: 3;
-  grid-column-end: 8;
-}
-
-.wrap49{
-	grid-column-start: 4;
   grid-column-end: 9;
 }
+
 
 .projekt1wrap{
 	height: 70vh;
@@ -344,13 +331,13 @@ button:hover{
 
 @media screen and (max-width : 860px) {
 	.kratkiopis{
-		grid-column-start: 2;
+		grid-column-start: 1;
 	  grid-column-end: 8;
-		margin-bottom: 8rem;
+		height: 90vh;
 	}
 
 	.funprojekti{
-		grid-column-start: 2;
+		grid-column-start: 3;
 	  grid-column-end: 8;
 	}
 
@@ -358,60 +345,22 @@ button:hover{
 		height: 2rem;
 	}
 
-	.wrap17{
-		grid-column-start: 1;
-	  grid-column-end: 7;
-	}
-
-	.wrap28{
-		grid-column-start: 2;
-	  grid-column-end: 8;
-	}
-
-	.wrap38{
-		grid-column-start: 2;
-	  grid-column-end: 8;
-	}
-
-	.wrap49{
-		grid-column-start: 3;
-	  grid-column-end: 9;
-	}
 }
 
 
 @media screen and (max-width : 460px) {
 	.kratkiopis{
 
-			grid-column-start: 1;
-		  grid-column-end: 9;
-			text-align: left;
-
 	}
 
 	.funprojekti{
+		grid-column-start: 1;
 		margin-top: 14rem;
-		margin-bottom: 14rem;
 	}
 
-	.wrap17{
-		grid-column-start: 1;
-	  grid-column-end: 8;
-	}
-
-	.wrap28{
+	.wrap39{
 		grid-column-start: 2;
-	  grid-column-end: 9;
-	}
-
-	.wrap38{
-		grid-column-start: 1;
-	  grid-column-end: 8;
-	}
-
-	.wrap49{
-		grid-column-start: 2;
-	  grid-column-end: 9;
+		grid-column-end: 9;
 	}
 
 	.flexdivider{
