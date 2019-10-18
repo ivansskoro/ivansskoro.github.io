@@ -13,6 +13,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: left;
+	cursor: -webkit-image-set(url("asseti/cursor.png") 1x, url("asseti/cursor@2x.png") 2x) 5 5, auto;
 }
 
 ::-webkit-scrollbar {
@@ -30,6 +31,11 @@ body {
 
 p {
 	margin: 0;
+	margin-bottom: 0.55em;
+}
+
+.mali {
+	margin-bottom: 0.9em;
 }
 
 h1 {
@@ -42,15 +48,35 @@ a {
 	font-style: italic;
 	text-decoration: none;
 	-webkit-transition-delay: 0s;
+	text-align: left;
 }
 
 a:hover {
-	font-style: normal;
-	background: rgb(0,0,0);
-	background: -moz-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
+	transition: 0.1s ease;
+	letter-spacing: -0.3px !important;
 }
+
+.fluidtypecaption {
+	font-size: 20px;
+	line-height: 1.15;
+	letter-spacing: 0.3px;
+	transition: 0.2s ease;
+}
+
+.fluidtype {
+	font-size: 30px;
+	line-height: 1.10;
+	letter-spacing: 0.3px;
+	transition: 0.2s ease;
+}
+
+.fluidtypenaslov {
+	font-size: 30px;
+	line-height: 1.10;
+	letter-spacing: 0.25px;
+	transition: 0.2s ease;
+}
+
 
 .fluidtypespacing:hover{
 	letter-spacing: -0.2px;
@@ -71,65 +97,11 @@ a:hover {
 
 .vertikalno{
 	writing-mode: vertical-lr;
-	transition: 0.2s ease;
-	letter-spacing: 1px !important;
-	margin-top: 3vh;
-}
-
-.vertikalno:hover{
-	transition: 0.2s ease;
-	background: rgb(0,0,0);
-	letter-spacing: -0.3px !important;
-	background: -moz-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(255,255,255,0) 100%);
-}
-
-button {
-	font-family: 'Arial', sans-serif;
-  background-color: white;
-  border: none;
-	padding: 0rem;
 	text-align: left;
+	letter-spacing: 1px !important;
+	height: 250px;
 }
 
-.buttontitle {
-	padding: 0.5rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	border: 2px solid black;
-	border-radius: 100px;
-	background-color: transparent;
-}
-
-button:hover{
-	background: rgb(0,0,0);
-	background: -moz-linear-gradient(90deg, rgba(150,150,15,150) 0%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,0) 100%);
-	cursor: pointer;
-}
-
-.fluidtypecaption {
-	font-size: 14px;
-	line-height: 1.15;
-	letter-spacing: 0.3px;
-	transition: 0.2s ease;
-}
-
-.fluidtype {
-	font-size: 20px;
-	line-height: 1.10;
-	letter-spacing: 0.3px;
-	transition: 0.2s ease;
-}
-
-.fluidtypenaslov {
-	font-size: 28px;
-	line-height: 1.10;
-	letter-spacing: 0.25px;
-	transition: 0.2s ease;
-}
 
 @media screen and (min-width : 400px) {
 	.fluidtypecaption {
@@ -137,73 +109,58 @@ button:hover{
 		letter-spacing: calc(0.5px + 0 * ((100vw - 375px) / (1600)));
 	}
 	.fluidtype {
-		font-size: calc(20px + 10 * ((100vw - 375px) / (1600)));
+		font-size: calc(24px + 10 * ((100vw - 400px) / (1600)));
+		letter-spacing: calc(0.2px + 0 * ((100vw - 375px) / (1440)));
+	}
+	.fluidtypenaslov {
+		font-size: calc(24px + 10 * ((100vw - 400px) / (1600)));
 		letter-spacing: calc(0.4px + 0 * ((100vw - 375px) / (1600)));
-	}
-	.fluidtypenaslov {
-		font-size: calc(28px + 10 * ((100vw - 375px) / (1600)));
-		letter-spacing: calc(0.35px + 0 * ((100vw - 375px) / (1600)));
-	}
-}
-
-@media screen and (min-width : 1600px) {
-	.fluidtypecaption {
-		font-size: 19px;
-	}
-	.fluidtype {
-		font-size: 32px;
-	}
-	.fluidtypenaslov {
-		font-size: 44px;
 	}
 }
 
 .wrapper {
-	padding: 1rem;
-  display: grid;
-	background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.title{
-	grid-column-start: 1;
-  grid-column-end: 9;
-	grid-row-start: 1;
 	height: 100vh;
-}
-
-.funprojekti{
-	margin-top: 28vh;
-	grid-column-start: 3;
-  grid-column-end: 7;
-	padding: 1rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	width: 55%;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
-	align-items: center;
-	background-color: #F0F1F2;
-	text-align: center;
+	float: left;
 }
 
-.kratkiopis{
-	height: 82vh;
-	margin-top: 0rem;
-	grid-column-start: 1;
-  grid-column-end: 5;
+.wrapper2 {
+	float: left;
+	height: 100vh;
+	width: 40%;
 	display: flex;
-	align-items: center;
-	min-height: 15rem;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
-.kratkiopisparagraf:hover {
-	text-align: center;
+.title p:first-of-type{
+	margin-bottom: 0;
+}
+
+.aboutmehome p:last-of-type{
+	margin-bottom: 0;
+}
+
+.title {
+	padding: 1rem;
+}
+
+.aboutmehome {
+	padding: 1rem;
+}
+
+.projectshome {
+	padding: 1rem;
 }
 
 .desniSidebarLinkovi{
 	display: flex;
+	flex-direction: column;
 	position: fixed;
-	align-items: center;
+	justify-content: space-between;
 	top: 0;
 	height: 100vh;
 	right: 0.5rem;
@@ -211,134 +168,15 @@ button:hover{
 	z-index: 100;
 }
 
-.lijeviSidebarLinkovi{
-	display: flex;
-	position: fixed;
-	align-items: center;
-	top: 0;
-	height: 100vh;
-	width: 2rem;
-	left: 1.3rem;
-	transform: rotate(180deg);
-	z-index: 100;
-}
-
-
-.wrap39{
-	grid-column-start: 3;
-  grid-column-end: 9;
-}
-
-
-.projekt1wrap{
-	height: 70vh;
-	background-color: #F2F2F2;
-}
-
-.projekt2wrap{
-	height: 70vh;
-	background-color: #F1EDF2;
-}
-
-.projektopis{
-	height: 70vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	transition: 0.2s ease;
-	text-align: center;
-	opacity: 0;
-	transition: 0.2s 0.04s;
-	background-color: white;
-	position: relative;
-	z-index: 10;
-	user-select: none;
-}
-
-.projekt1back{
-	height: 100%;
-	background-image: url(asseti/piccola.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-top: -70vh;
-	position: relative;
-	z-index: 4;
-}
-
-.projekt2back{
-	height: 100%;
-	background-image: url(asseti/xemantic.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-	margin-top: -70vh;
-	z-index: 4;
-}
-
-.projekt1wrap:hover .projektopis {
-	opacity: 1;
-	transition: 0.2s 0.04s;
-}
-
-.projekt2wrap:hover .projektopis {
-	opacity: 1;
-	transition: 0.2s 0.04s;
-}
-
-.social{
-	display: flex;
-	grid-column-start: 1;
-  grid-column-end: 9;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-bottom: -0.4rem;
-}
-
-.flexCenter{
-	justify-content: center;
-}
-
-.flexdivider{
-	width: 1rem;
-	height: 1rem;
-}
-
-.divider{
-	height: 5rem;
-	grid-column-start: 1;
-  grid-column-end: 9;
-}
-
-
 @media (hover: none) {
    a:link {
       background: rgba(255, 0, 0, 0);
    }
-
- 	.posebanLink {
- 			pointer-events: all;
- 			display: block;
- 			height: 70vh;
- 			width: 100%;
- 			margin-bottom: -70vh;
- 			position: absolute;
- 			z-index: 100;
-	 }
 }
 
 @media screen and (max-width : 860px) {
 	.kratkiopis{
-		grid-column-start: 1;
-	  grid-column-end: 8;
 		height: 90vh;
-	}
-
-	.funprojekti{
-		grid-column-start: 3;
-	  grid-column-end: 8;
 	}
 
 	.divider{
@@ -351,16 +189,6 @@ button:hover{
 @media screen and (max-width : 460px) {
 	.kratkiopis{
 
-	}
-
-	.funprojekti{
-		grid-column-start: 1;
-		margin-top: 14rem;
-	}
-
-	.wrap39{
-		grid-column-start: 2;
-		grid-column-end: 9;
 	}
 
 	.flexdivider{
