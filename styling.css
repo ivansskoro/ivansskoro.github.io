@@ -35,7 +35,7 @@ p {
 }
 
 .mali {
-	margin-bottom: 0.9em;
+	margin-bottom: 1em;
 }
 
 h1 {
@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-	transition: 0.1s ease;
+	transition: 0.15s ease;
 	letter-spacing: -0.3px !important;
 }
 
@@ -60,39 +60,39 @@ a:hover {
 	font-size: 20px;
 	line-height: 1.15;
 	letter-spacing: 0.3px;
-	transition: 0.2s ease;
+	transition: 0.15s ease;
 }
 
 .fluidtype {
 	font-size: 30px;
 	line-height: 1.10;
 	letter-spacing: 0.3px;
-	transition: 0.2s ease;
+	transition: 0.15s ease;
 }
 
 .fluidtypenaslov {
 	font-size: 30px;
 	line-height: 1.10;
 	letter-spacing: 0.25px;
-	transition: 0.2s ease;
+	transition: 0.15s ease;
 }
 
 
 .fluidtypespacing:hover{
 	letter-spacing: -0.2px;
-	transition: 0.2s ease;
+	transition: 0.15s ease;
 }
 
 .fluidtypecaption:hover{
 	letter-spacing: -0.2px;
-	transition: 0.2s ease;
+	transition: 0.15s ease;
 	margin-left: -0.8rem;
 	padding-left: 0.8rem;
 }
 
 .fluidtypecaptionspacing:hover{
 	letter-spacing: -0.2px;
-	transition: 0.2s ease;
+	transition: 0.15s ease;
 }
 
 .vertikalno{
@@ -124,7 +124,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	float: left;
+	float: right;
 }
 
 .wrapper2 {
@@ -145,15 +145,20 @@ a:hover {
 }
 
 .title {
-	padding: 1rem;
+	padding: 1em;
 }
 
 .aboutmehome {
-	padding: 1rem;
+	padding: 1em;
 }
 
 .projectshome {
-	padding: 1rem;
+	padding-left: 1em;
+}
+
+.projects section:last-of-type{
+	margin-top: 4em;
+	margin-bottom: 2em;
 }
 
 .desniSidebarLinkovi{
@@ -161,9 +166,9 @@ a:hover {
 	flex-direction: column;
 	position: fixed;
 	justify-content: space-between;
-	top: 0;
+	top: -1.5rem;
 	height: 100vh;
-	right: 0.5rem;
+	left: 2.5rem;
 	transform: rotate(180deg);
 	z-index: 100;
 }
