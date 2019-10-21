@@ -1,6 +1,8 @@
 
 html {
 	font-size: 62.5%;
+
+	cursor: -webkit-image-set(url("asseti/cursor.png") 1x, url("asseti/cursor@2x.png") 2x) 5 5, auto;
 }
 
 body {
@@ -13,7 +15,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: left;
-	cursor: -webkit-image-set(url("asseti/cursor.png") 1x, url("asseti/cursor@2x.png") 2x) 5 5, auto;
 }
 
 ::-webkit-scrollbar {
@@ -157,8 +158,11 @@ a:hover {
 }
 
 .projects section:last-of-type{
-	margin-top: 4em;
-	margin-bottom: 2em;
+	margin-top: 2em;
+}
+
+.projects p{
+	margin-bottom: 0.28em;
 }
 
 .desniSidebarLinkovi{
