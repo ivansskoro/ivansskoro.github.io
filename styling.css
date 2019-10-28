@@ -117,6 +117,7 @@ p{
   .wrapper {
   	display: grid;
   	overflow: auto;
+    height: auto;
   }
 
   .lijevo {
@@ -127,11 +128,11 @@ p{
   }
 
   .sredina {
-  	overflow: visible;
     width: 100%;
     order: 3;
     height: auto;
   }
+
   .sredinascroll {
   }
 
