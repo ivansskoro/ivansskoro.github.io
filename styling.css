@@ -185,12 +185,8 @@ p:hover{
     display: block;
   }
 
-
-
-  @media (hover: none) {
-    #item:focus > #info{
-        display: block;
-      }
+#item[data-active] > #info{
+    display: block;
   }
 
 #item:hover {
