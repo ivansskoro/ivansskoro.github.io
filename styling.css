@@ -161,7 +161,7 @@ p:hover{
   background: red;
   touch-action: none;
   user-select: none;
-  touch-action: none;
+  pointer-events: none;
   }
 
 .info {
