@@ -186,7 +186,7 @@ p:hover{
     display: block;
   }
 
-.infoButton[data-active] .info{
+#infoButton[data-active] #info{
     display: block;
   }
 
