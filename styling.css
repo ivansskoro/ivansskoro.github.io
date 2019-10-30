@@ -43,7 +43,6 @@ a:hover {
 }
 
 
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -74,6 +73,7 @@ a:hover {
 	overflow: auto;
   width: 66%;
 }
+
 .sredinascroll {
   padding-bottom: 0rem;
 }
@@ -91,13 +91,10 @@ a:hover {
   overflow: hidden;
 }
 
-
 .piccola {
   background-color: #B87A2E;
 	padding: 1rem;
 }
-
-
 
 .sredinascroll a {
 	text-align: right;
@@ -105,11 +102,8 @@ a:hover {
 	color: white;
 	font-family: 'Arial', sans-serif;
   text-decoration: none;
-  	font-style: italic;
-
+	font-style: italic;
 }
-
-
 
 .sredinascroll a:hover {
   font-style: normal;
@@ -120,11 +114,9 @@ a:hover {
 	margin-bottom: 0;
 }
 
-
 .sredinascroll img {
 	width: 100%;
 }
-
 
 p:hover{
   letter-spacing: -0.1px;
@@ -149,6 +141,54 @@ p:hover{
 
 .desno a:hover {
 	font-style: normal;
+}
+
+#sadrzaj {
+  height: 0px;
+  position: relative;
+  top: 0px;
+  left:0px;
+}
+#item {
+  position: absolute;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  top: 40px;
+  left: 20px;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 100px;
+  background-color: #2811FF;
+  touch-action: none;
+  user-select: none;
+  touch-action: none;
+  }
+
+#info {
+  position: absolute;
+  background-color: black;
+  font-family: 'Panamamono', sans-serif;
+  font-size: 22px;
+  line-height: 1.09;
+  font-style: normal;
+  width: 300px;
+  top: 50px;
+  left:0px;
+  padding: 1rem;
+  display: none;
+}
+
+#item:active {
+  font-style: normal;
+
+}
+#item:active > #info{
+    display: block;
+  }
+
+
+
+#item:hover {
+  cursor: pointer;
 }
 
 
