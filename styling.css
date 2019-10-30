@@ -181,6 +181,7 @@ p:hover{
   font-style: normal;
 
 }
+
 #item:active > #info{
     display: block;
   }

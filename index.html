@@ -146,13 +146,13 @@
 
 
 
-		addEventListener("mousedown", function (event) {
+		addEventListener("touchstart", function (event) {
     if (event.target.setAttribute) {
         event.target.setAttribute("data-active", "");
     }
 		}, true);
 
-		addEventListener("mouseup", function (event) {
+		addEventListener("touchend", function (event) {
 		    if (event.target.removeAttribute) {
 		        event.target.removeAttribute("data-active");
 		    }
