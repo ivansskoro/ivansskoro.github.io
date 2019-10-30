@@ -20,7 +20,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	color: white;
-	background: black;
+	background: #0C1A00;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: left;
@@ -33,13 +33,13 @@ p{
 
 a {
 
-  transition: text-shadow 0.15s ease-out;
+  transition: text-shadow 0.1s ease-out;
 }
 
 a:hover {
 
     text-shadow: 0px 0px 16px #fff;
-    transition: text-shadow 0.15s ease-out;
+    transition: text-shadow 0.1s ease-out;
 }
 
 
@@ -63,8 +63,8 @@ a:hover {
 	width: 22%;
 	min-width: 260px;
   max-width: 380px;
-	background-color: black;
 	padding: 1rem;
+
 }
 
 .sredina {
@@ -72,34 +72,36 @@ a:hover {
 	display: block;
 	overflow: auto;
   width: 66%;
+  color: black;
 }
 
 .sredinascroll {
   padding-bottom: 0rem;
+  background-image: linear-gradient(180deg, #F9A189 0%, #FB8674 27%, #EE72C2 44%, #D974D8 61%, #B97BED 80%, #8983FF 100%);
 }
 
 .desno {
 	width: 11%;
 	min-width: 110px;
-  max-width: 160px;
+  max-width: 140px;
 	padding: 1rem;
 }
 
 .bla {
-  background-color: #C32C2C;
+  /* background-color: #C32C2C; */
   padding: 1rem;
   overflow: hidden;
 }
 
 .piccola {
-  background-color: #B87A2E;
+  /* background-color: #B87A2E; */
 	padding: 1rem;
 }
 
 .sredinascroll a {
 	text-align: right;
+  color: black;
 	width: 100%;
-	color: white;
 	font-family: 'Arial', sans-serif;
   text-decoration: none;
 	font-style: italic;
@@ -154,13 +156,15 @@ p:hover{
   position: absolute;
   font-family: 'Arial', sans-serif;
   font-style: italic;
-  top: 50px;
+
+  color: white;
+  top: 40px;
   left: 20px;
-  padding: 1rem 2rem 1rem 2rem;
-  border-radius: 100px;
-  background: red;
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  background: black;
   touch-action: none;
   user-select: none;
+  transition: text-shadow 0.1s ease-out;
   }
 
 .info {
@@ -176,10 +180,16 @@ p:hover{
   padding: 1rem;
   display: none;
 }
+.infoButton:hover {
+  font-style: normal;
+  text-shadow: 0px 0px 16px #fff;
+  transition: text-shadow 0.1s ease-out;
+}
 
 .infoButton:active {
   font-style: normal;
-
+  text-shadow: 0px 0px 16px #fff;
+  transition: text-shadow 0.1s ease-out;
 }
 
 .infoButton:active > .info{
@@ -204,27 +214,28 @@ p:hover{
   }
 
   .lijevo {
-  	width: calc(100% - 2rem);
-  	background-color: black;
+  	width: calc(100vw - 2rem);
   	padding: 1rem;
-    height: 50vh;
+    height: 60vh;
   }
 
   .sredina {
     width: 100%;
     order: 3;
     height: auto;
+
   }
 
   .sredinascroll {
   }
 
   .desno {
+    width: calc(100vw - 2rem);
     order: 2;
-    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    max-width: 100vw;
   }
   body {
   	font-size: 20px;
