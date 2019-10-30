@@ -191,9 +191,6 @@ p:hover{
     #item:focus > #info{
         display: block;
       }
-        #item:hover > #info{
-            display: block;
-          }
   }
 
 #item:hover {
