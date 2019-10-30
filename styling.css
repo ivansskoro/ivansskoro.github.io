@@ -143,27 +143,28 @@ p:hover{
 	font-style: normal;
 }
 
-#sadrzaj {
+.dragAnchor {
   height: 0px;
   position: relative;
   top: 0px;
   left:0px;
 }
-#item {
+
+.infoButton {
   position: absolute;
   font-family: 'Arial', sans-serif;
   font-style: italic;
-  top: 40px;
+  top: 50px;
   left: 20px;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 100px;
-  background-color: #2811FF;
+  background: red;
   touch-action: none;
   user-select: none;
   touch-action: none;
   }
 
-#info {
+.info {
   position: absolute;
   background-color: black;
   font-family: 'Panamamono', sans-serif;
@@ -177,20 +178,20 @@ p:hover{
   display: none;
 }
 
-#item:active {
+.infoButton:active {
   font-style: normal;
 
 }
 
-#item:active > #info{
+.infoButton:active > .info{
     display: block;
   }
 
-#item[data-active] > #info{
+.infoButtonm[data-active] > .info{
     display: block;
   }
 
-#item:hover {
+.infoButton:hover {
   cursor: pointer;
 }
 
@@ -226,5 +227,21 @@ p:hover{
     flex-direction: column;
     justify-content: flex-end;
   }
+  body {
+  	font-size: 20px;
+  	line-height: 1.09;
+  }
+
+  .info {
+
+    width: 280px;
+  }
+}
+
+@media screen and (min-width : 1600px) {
+  .sredina {
+    width: auto;
+  }
+
 
 }

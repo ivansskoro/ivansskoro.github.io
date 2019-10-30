@@ -7,6 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="styling.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>ivanškoro</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 </head>
 <body ontouchstart="">
 
@@ -29,20 +32,22 @@
 				</p>
 			</section>
 		</section>
-		<section class="sredina">
+		<section class="sredina dragContainer">
 			<section class="sredinascroll">
-				<section id="container" class="projekt bla" ontouchstart="">
 
-					<div id="sadrzaj" ontouchstart="">
-					<div id="item" ontouchstart="">
-						DRAG FOR INFO
-						<div id="info" ontouchstart="">
-							B-LA CONNECT is a platform promoting the cooperation and interlinking between the
-							two sister cities’ creative communities. Over 40 art spaces from Berlin and LA are participating.
-							I had the pleasure of designing and developing the mobile version of their website.
-						</div>
-					</div>
-					</div>
+				<section class="projekt bla">
+
+
+										<div class="dragAnchor">
+											<div class="infoButton">
+												DRAG FOR INFO
+												<div class="info">
+													B-LA CONNECT is a platform promoting the cooperation and interlinking between the
+													two sister cities’ creative communities. Over 40 art spaces from Berlin and LA are participating.
+													I had the pleasure of designing and developing the mobile version of their website.
+												</div>
+											</div>
+										</div>
 
 					<p>
 						<a href="https://www.b-la-connect.org/" target="_blank">BERLIN LA CONNECT</a>
@@ -58,7 +63,21 @@
 					<img src="asseti/Projekti/BLA/bla_2.jpg" alt="BERLIN LA CONNECT navigation">
 					<img src="asseti/Projekti/BLA/bla_3.jpg" alt="BERLIN LA CONNECT rest of website">
 				</section>
+
+
+
+
 				<section class="projekt piccola">
+
+					<div class="dragAnchor">
+						<div class="infoButton">
+							DRAG FOR INFO
+							<div class="info">
+								The first Croatian brand for personalised accessories. Custom drawn letterforms reflect customization each of their products goes through.
+							</div>
+						</div>
+					</div>
+
 					<p>
 						<a href="https://www.piccolacreations.com/" target="_blank">PICCOLA</a>
 					</p>
@@ -68,6 +87,8 @@
 					<img src="asseti/Projekti/Piccola/piccola_1.jpg" alt="Piccola logotype">
 				</section>
 			</section>
+
+
 		</section>
 
 		<section class="desno">
@@ -80,72 +101,93 @@
 		</section>
 	</section>
 	<script>
-		var dragItem = document.querySelector("#item");
-		var container = document.querySelector("#container");
 
-		var active = false;
-		var currentX;
-		var currentY;
-		var initialX;
-		var initialY;
-		var xOffset = 0;
-		var yOffset = 0;
-
-		container.addEventListener("touchstart", dragStart, false);
-		container.addEventListener("touchend", dragEnd, false);
-		container.addEventListener("touchmove", drag, false);
-
-		container.addEventListener("mousedown", dragStart, false);
-		container.addEventListener("mouseup", dragEnd, false);
-		container.addEventListener("mousemove", drag, false);
-
-		function dragStart(e) {
-			if (e.type === "touchstart") {
-				initialX = e.touches[0].clientX - xOffset;
-				initialY = e.touches[0].clientY - yOffset;
-			} else {
-				initialX = e.clientX - xOffset;
-				initialY = e.clientY - yOffset;
-			}
-
-			if (e.target === dragItem) {
-				active = true;
-			}
-		}
-
-		function dragEnd(e) {
-			initialX = currentX;
-			initialY = currentY;
-
-			active = false;
-		}
-
-		function drag(e) {
-			if (active) {
-
-				e.preventDefault();
-
-				if (e.type === "touchmove") {
-					currentX = e.touches[0].clientX - initialX;
-					currentY = e.touches[0].clientY - initialY;
-				} else {
-					currentX = e.clientX - initialX;
-					currentY = e.clientY - initialY;
-				}
-
-				xOffset = currentX;
-				yOffset = currentY;
-
-				setTranslate(currentX, currentY, dragItem);
-			}
-		}
-
-		function setTranslate(xPos, yPos, el) {
-			el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+		var x = document.getElementsByClassName("infoButton");
+		var max = screen.height / 15
+		var max2 = screen.width / 12
+		var i;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.top = Math.floor((Math.random() * (max - 15)) + 15)+'px';
+			x[i].style.left = Math.floor((Math.random() * (max2 - 10)) + 10)+'px';
+			x[i].style.background = "hsl("+Math.floor((Math.random() * (280 - 210)) + 210)+", 100%, 48%)";
 		}
 
 
 
+		var container = document.querySelector(".dragContainer");
+    var activeItem = null;
+
+    var active = false;
+
+    container.addEventListener("touchstart", dragStart, false);
+    container.addEventListener("touchend", dragEnd, false);
+    container.addEventListener("touchmove", drag, false);
+
+    container.addEventListener("mousedown", dragStart, false);
+    container.addEventListener("mouseup", dragEnd, false);
+    container.addEventListener("mousemove", drag, false);
+
+    function dragStart(e) {
+
+      if (e.target !== e.currentTarget) {
+        active = true;
+
+        // this is the item we are interacting with
+        activeItem = e.target;
+
+        if (activeItem !== null) {
+          if (!activeItem.xOffset) {
+            activeItem.xOffset = 0;
+          }
+
+          if (!activeItem.yOffset) {
+            activeItem.yOffset = 0;
+          }
+
+          if (e.type === "touchstart") {
+            activeItem.initialX = e.touches[0].clientX - activeItem.xOffset;
+            activeItem.initialY = e.touches[0].clientY - activeItem.yOffset;
+          } else {
+            console.log("doing something!");
+            activeItem.initialX = e.clientX - activeItem.xOffset;
+            activeItem.initialY = e.clientY - activeItem.yOffset;
+          }
+        }
+      }
+    }
+
+    function dragEnd(e) {
+      if (activeItem !== null) {
+        activeItem.initialX = activeItem.currentX;
+        activeItem.initialY = activeItem.currentY;
+      }
+
+      active = false;
+      activeItem = null;
+    }
+
+    function drag(e) {
+      if (active) {
+        if (e.type === "touchmove") {
+          e.preventDefault();
+
+          activeItem.currentX = e.touches[0].clientX - activeItem.initialX;
+          activeItem.currentY = e.touches[0].clientY - activeItem.initialY;
+        } else {
+          activeItem.currentX = e.clientX - activeItem.initialX;
+          activeItem.currentY = e.clientY - activeItem.initialY;
+        }
+
+        activeItem.xOffset = activeItem.currentX;
+        activeItem.yOffset = activeItem.currentY;
+
+        setTranslate(activeItem.currentX, activeItem.currentY, activeItem);
+      }
+    }
+
+    function setTranslate(xPos, yPos, el) {
+      el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+    }
 
 		addEventListener("touchmove", function (event) {
 		if (event.target.setAttribute) {
@@ -154,10 +196,11 @@
 		}, true);
 
 		addEventListener("touchend", function (event) {
-		    if (event.target.removeAttribute) {
-		        event.target.removeAttribute("data-active");
-		    }
+				if (event.target.removeAttribute) {
+						event.target.removeAttribute("data-active");
+				}
 		}, true);
+
 
 
 	</script>
