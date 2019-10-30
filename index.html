@@ -109,7 +109,7 @@
 		for (i = 0; i < x.length; i++) {
 			x[i].style.top = Math.floor((Math.random() * (max - 15)) + 15)+'px';
 			x[i].style.left = Math.floor((Math.random() * (max2 - 10)) + 10)+'px';
-			x[i].style.background = "hsl("+Math.floor((Math.random() * (280 - 210)) + 210)+", 100%, 48%)";
+			x[i].style.background = "hsl("+Math.floor((Math.random() * (290 - 200)) + 200)+", 82%, 44%)";
 		}
 
 
@@ -129,7 +129,7 @@
 
     function dragStart(e) {
 
-      if (e.target !== e.currentTarget) {
+      if (e.target !== e.currentTarget && $(event.target).hasClass("infoButton") ) {
         active = true;
 
         // this is the item we are interacting with
