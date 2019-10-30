@@ -187,6 +187,15 @@ p:hover{
 
 
 
+  @media (hover: none) {
+    #item:focus > #info{
+        display: block;
+      }
+        #item:hover > #info{
+            display: block;
+          }
+  }
+
 #item:hover {
   cursor: pointer;
 }
