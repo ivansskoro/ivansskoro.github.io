@@ -146,10 +146,11 @@
 
 
 
-		addEventListener("touchstart", function (event) {
-    if (event.target.setAttribute) {
-        event.target.setAttribute("data-active", "");
-    }
+
+		addEventListener("touchmove", function (event) {
+		if (event.target.setAttribute) {
+				event.target.setAttribute("data-active", "");
+		}
 		}, true);
 
 		addEventListener("touchend", function (event) {
