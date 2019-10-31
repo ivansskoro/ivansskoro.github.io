@@ -90,26 +90,13 @@ a:hover {
   justify-content: center;
 }
 
-.stazaText a {
-  fill: white;
-}
 
-.stazaContainer {
-  display: flex;
-  justify-content: center;
-}
-.ukrug {
-  transform: scale(1.5);
-}
 
 .bla {
-  /* background-color: #C32C2C; */
   padding: 1rem;
-  overflow: hidden;
 }
 
 .piccola {
-  /* background-color: #B87A2E; */
 	padding: 1rem;
 }
 
@@ -220,6 +207,20 @@ p:hover{
 }
 
 
+.stazaText a {
+  fill: white;
+}
+
+.stazaContainer {
+  display: flex;
+  justify-content: center;
+}
+.ukrug {
+  transform: scale(1.5);
+}
+
+
+
 @media screen and (max-width : 600px) {
 
   .wrapper {
@@ -231,7 +232,7 @@ p:hover{
   .lijevo {
   	width: calc(100vw - 2rem);
   	padding: 1rem;
-    height: 60vh;
+    min-height: 50vh;
   }
 
   .sredina {
@@ -241,7 +242,9 @@ p:hover{
 
   }
 
-  .sredinascroll {
+  .ukrug {
+    transform: scale(1.2);
+    padding-bottom: 15vh;
   }
 
   .desno {
