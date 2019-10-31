@@ -221,7 +221,7 @@ p:hover{
 
 
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 769px) {
 
   .wrapper {
   	display: grid;
