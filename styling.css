@@ -85,6 +85,21 @@ a:hover {
 	min-width: 110px;
   max-width: 140px;
 	padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stazaText a {
+  fill: white;
+}
+
+.stazaContainer {
+  display: flex;
+  justify-content: center;
+}
+.ukrug {
+  transform: scale(1.5);
 }
 
 .bla {
