@@ -77,7 +77,11 @@ a:hover {
 
 .sredinascroll {
   padding-bottom: 0rem;
-  background-image: linear-gradient(180deg, #F9A189 0%, #FB8674 27%, #EE72C2 44%, #D974D8 61%, #B97BED 80%, #8983FF 100%);
+  background-image: linear-gradient(0deg, #C296BB 0%, #C296BB 6%, #C697B8 6%, #C697B8 12%, #CA97B4 12%,
+    #CA97B4 19%, #CE98B1 19%, #CE98B1 25%, #D299AE 25%, #D299AE 31%, #D699AA 31%, #D699AA 37%, #DA9AA7 37%,
+    #DA9AA7 44%, #DE9BA4 44%, #DE9BA4 50%, #E19BA0 50%, #E19BA0 56%, #E59C9D 56%, #E59C9D 62%, #E89D99 62%,
+    #E89D99 69%, #EC9D96 69%, #EC9D96 75%, #EF9E92 75%, #EF9E92 81%, #F29F8F 81%, #F29F8F 87%, #F69F8C 87%,
+    #F69F8C 94%, #F9A088 94%, #F9A088 100%);
 }
 
 .desno {
@@ -91,14 +95,10 @@ a:hover {
 }
 
 
-
-.bla {
-  padding: 1rem;
+.projekt {
+    padding: 1rem;
 }
 
-.piccola {
-	padding: 1rem;
-}
 
 .sredinascroll a {
 	text-align: right;
@@ -108,6 +108,14 @@ a:hover {
   text-decoration: none;
 	font-style: italic;
 }
+
+.projektnaslov {
+	text-align: right;
+	font-family: 'Arial', sans-serif;
+}
+
+
+
 
 .sredinascroll a:hover {
   font-style: normal;
@@ -158,7 +166,6 @@ p:hover{
   position: absolute;
   font-family: 'Arial', sans-serif;
   font-style: italic;
-
   color: white;
   top: 40px;
   left: 20px;
