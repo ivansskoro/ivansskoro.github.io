@@ -227,7 +227,6 @@ p:hover{
 }
 
 
-
 @media screen and (max-width : 769px) {
 
   .wrapper {
@@ -268,7 +267,6 @@ p:hover{
   }
 
   .info {
-
     width: 280px;
   }
 }
