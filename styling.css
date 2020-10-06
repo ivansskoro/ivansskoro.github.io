@@ -48,8 +48,8 @@ a:hover {
 }
 
 ::selection {
-  background: black;
-	color: black;
+  background: #0C1A00;
+	color: #0C1A00;
 }
 
 .wrapper {
@@ -72,16 +72,12 @@ a:hover {
 	display: block;
 	overflow: auto;
   width: 66%;
-  color: black;
+  color: #0C1A00;
 }
 
 .sredinascroll {
   padding-bottom: 0rem;
-  background-image: linear-gradient(0deg, #C296BB 0%, #C296BB 6%, #C697B8 6%, #C697B8 12%, #CA97B4 12%,
-    #CA97B4 19%, #CE98B1 19%, #CE98B1 25%, #D299AE 25%, #D299AE 31%, #D699AA 31%, #D699AA 37%, #DA9AA7 37%,
-    #DA9AA7 44%, #DE9BA4 44%, #DE9BA4 50%, #E19BA0 50%, #E19BA0 56%, #E59C9D 56%, #E59C9D 62%, #E89D99 62%,
-    #E89D99 69%, #EC9D96 69%, #EC9D96 75%, #EF9E92 75%, #EF9E92 81%, #F29F8F 81%, #F29F8F 87%, #F69F8C 87%,
-    #F69F8C 94%, #F9A088 94%, #F9A088 100%);
+
 }
 
 .desno {
@@ -97,24 +93,62 @@ a:hover {
 
 .projekt {
     padding: 1rem;
+    margin-bottom: 6rem;
 }
 
+.aircash {
+/*  background-image: linear-gradient(0deg, #C296BB 0%, #C296BB 6%, #C697B8 6%, #C697B8 12%, #CA97B4 12%,
+  #CA97B4 19%, #CE98B1 19%, #CE98B1 25%, #D299AE 25%, #D299AE 31%, #D699AA 31%, #D699AA 37%, #DA9AA7 37%,
+  #DA9AA7 44%, #DE9BA4 44%, #DE9BA4 50%, #E19BA0 50%, #E19BA0 56%, #E59C9D 56%, #E59C9D 62%, #E89D99 62%,
+  #E89D99 69%, #EC9D96 69%, #EC9D96 75%, #EF9E92 75%, #EF9E92 81%, #F29F8F 81%, #F29F8F 87%, #F69F8C 87%,
+  #F69F8C 94%, #F9A088 94%, #F9A088 100%);*/
 
-.sredinascroll a {
+  background: red;
+}
+
+.bla {
+
+  background: #9E9BC3;
+}
+
+.piccola {
+  background: white;
+}
+
+.posteri {
+  background: lightblue;
+}
+
+.projekt a {
 	text-align: right;
-  color: black;
+  color: #0C1A00;
 	width: 100%;
 	font-family: 'Arial', sans-serif;
   text-decoration: none;
 	font-style: italic;
 }
 
+.detaljibutton {
+  text-align: center !important;
+  color: white !important;
+  background: black !important; 
+  padding: 14px 0px;
+  width: 40% !important;
+  display: block !important;
+  transition:  0.1s ease-out;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.detaljibutton:hover {
+  background: #222222 !important;
+  transition: 0.1s ease-out;
+}
+
 .projektnaslov {
 	text-align: right;
 	font-family: 'Arial', sans-serif;
 }
-
-
 
 
 .sredinascroll a:hover {
@@ -170,7 +204,7 @@ p:hover{
   top: 40px;
   left: 20px;
   padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-  background: black;
+  background: #0C1A00;
   touch-action: none;
   user-select: none;
   transition: text-shadow 0.1s ease-out;
@@ -178,7 +212,7 @@ p:hover{
 
 .info {
   position: absolute;
-  background-color: black;
+  background-color: #0C1A00;
   font-family: 'Panamamono', sans-serif;
   font-size: 22px;
   line-height: 1.09;
