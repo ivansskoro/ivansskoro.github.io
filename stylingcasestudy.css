@@ -1,0 +1,113 @@
+/*black=  #0C1A00;*/
+
+
+@font-face {
+  font-family: UntitledSans;
+  src: url(asseti/Font/UntitledSansRegular.otf);
+}
+
+
+html {
+	cursor: -webkit-image-set(url("asseti/cursor.png") 1x, url("asseti/cursor@2x.png") 2x) 0 0, auto;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'UntitledSans', sans-serif;
+	font-size: 22px;
+	line-height: 1.25;
+	margin: 0 auto;
+	padding: 0;
+	color: #0C1A00;
+	background: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: left;
+}
+
+
+
+a {
+  transition: text-shadow 0.1s ease-out;
+}
+
+a:hover {
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+  transition: text-shadow 0.1s ease-out;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+  background: #0C1A00;
+	color: #0C1A00;
+}
+
+.wrapper {
+	display: flex;
+  flex-direction: column;
+	width: 75%;
+  max-width: 1200px;
+	overflow: hidden;
+  padding: 1rem;  
+}
+
+
+p {
+  margin-bottom: 0.7rem;
+  width: 500px;
+  margin-top: 0;
+  transition: letter-spacing 0.1s ease-out;
+}
+
+.naslov {
+font-size: 26px;
+margin-bottom: 2rem;
+margin-top: 2rem;
+}
+
+
+p:hover{
+  letter-spacing: -0.1px;
+  transition: letter-spacing 0.1s ease-out;
+}
+
+.wrapper img {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	display: block;
+  width: 100%;
+}
+
+
+
+
+@media screen and (max-width : 769px) {
+
+  .wrapper {
+  	display: grid;
+  	overflow: auto;
+    height: auto;
+  }
+
+
+
+  body {
+  	font-size: 19px;
+  	line-height: 1.09;
+  }
+
+
+  
+}
+
+@media screen and (min-width : 1600px) {
+  .sredina {
+    width: auto;
+  }
+
+
+}
