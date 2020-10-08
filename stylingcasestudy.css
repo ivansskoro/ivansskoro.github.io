@@ -29,11 +29,17 @@ body {
 
 a {
   transition: text-shadow 0.1s ease-out;
+  font-style: italic;
+  color: #0C1A00;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 a:hover {
-  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
   transition: text-shadow 0.1s ease-out;
+  color: white;
+  font-style: normal;
 }
 
 
@@ -48,36 +54,60 @@ a:hover {
 
 .wrapper {
 	display: flex;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+  width: calc(100% - 2rem);
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.scroll {
+  width: 75%;
+  height: 100%;
+  overflow: scroll;
+
+  padding-top: 1rem;
+}
+
+.lijevo {
+  padding-bottom: 2rem;
+}
+
+.desno {
+  width: 20%;
+  display: flex;
   flex-direction: column;
-	width: 75%;
-  max-width: 1200px;
-	overflow: hidden;
-  padding: 1rem;  
+
+  padding-top: 1rem;
 }
 
 
 p {
-  margin-bottom: 0.7rem;
-  width: 500px;
+  margin-bottom: 1.5rem;
+  width: 480px;
   margin-top: 0;
   transition: letter-spacing 0.1s ease-out;
 }
 
 .naslov {
 font-size: 26px;
-margin-bottom: 2rem;
-margin-top: 2rem;
+margin-bottom: 1.5rem;
 }
 
+.indent {
+text-indent: 3rem;
+}
 
 p:hover{
   letter-spacing: -0.1px;
   transition: letter-spacing 0.1s ease-out;
 }
 
-.wrapper img {
-	margin-top: 0.5rem;
-	margin-bottom: 1rem;
+.lijevo img {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	display: block;
   width: 100%;
 }

@@ -1,10 +1,10 @@
 var x = document.getElementsByClassName("infoButton");
-var max = screen.height / 16
-var max2 = screen.width / 12
+var max = screen.height / 60
+var max2 = screen.width / 50
 var i;
 for (i = 0; i < x.length; i++) {
-  x[i].style.top = Math.floor((Math.random() * (max - 10)) + 10)+'px';
-  x[i].style.left = Math.floor((Math.random() * (max2 - 10)) + 10)+'px';
+  x[i].style.top = Math.floor((Math.random() * (max - 5)) + 3)+'px';
+  x[i].style.left = Math.floor((Math.random() * (max2 - 5)) + 3)+'px';
   // x[i].style.background = "hsl("+Math.floor((Math.random() * (250 - 210)) + 210)+", 100%, 75%)";
 }
 
