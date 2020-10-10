@@ -38,7 +38,6 @@ a:hover {
   font-style: normal;
 }
 
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -92,7 +91,8 @@ p {
 }
 
 p, h2, h3, h5 {
-  width: 660px;
+  width: 100%;
+  max-width: 660px;
   font-weight: normal;
 }
 
@@ -104,7 +104,8 @@ p, h2, h3, h5 {
   padding: 2.5rem 2rem 1.5rem 2rem;
   margin-bottom: 4rem;
   border: 1px black solid;
-  width: 660px;;
+  width: calc(100% - 5rem);
+  max-width: 660px;
 }
 
 h2 {
@@ -160,14 +161,7 @@ h5 {
 
 
 
-@media screen and (max-width : 769px) {
-
-  .wrapper {
-  	display: grid;
-  	overflow: auto;
-    height: auto;
-  }
-
+@media screen and (max-width : 800px) {
 
 
   body {
@@ -175,6 +169,36 @@ h5 {
   	line-height: 1.09;
   }
 
+  .wrapper {
+  	flex-direction: column;
+  	overflow: auto;
+    height: 100vh;
+  }
+
+  .scroll {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .lijevo {
+    padding-bottom: 2rem;
+    height: auto;
+    width: 100%;
+  }
+
+
+  .desno {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .bloksivi {
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
+    margin-bottom: 4rem;
+    width: calc(100% - 3rem - 2px);
+  }
 
 
 }
