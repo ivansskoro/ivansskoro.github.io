@@ -197,13 +197,13 @@ h2:hover, h5:hover, h3:hover{
     z-index: 20;
     left: 0;
     padding: 1rem;
-    padding-bottom: 3vh;
+    padding-bottom: 1.5rem;
     border-top: 1px solid #000;
   }
 
   .desno a{
-    margin-top: .4rem;
-    margin-bottom: .4rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
   }
 
   .bloksivi {
