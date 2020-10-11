@@ -69,6 +69,7 @@ a:hover {
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  max-width: 660px;
 }
 
 .desno {
@@ -85,14 +86,13 @@ a:hover {
 
 
 p {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   margin-top: 0;
   transition: .1s ease-out;
 }
 
 p, h2, h3, h5 {
   width: 100%;
-  max-width: 660px;
   font-weight: normal;
 }
 
@@ -101,11 +101,10 @@ p, h2, h3, h5 {
 }
 
 .bloksivi {
-  padding: 2.5rem 2rem 1.5rem 2rem;
+  padding: 1.2rem 3rem 0.5rem 2rem;
   margin-bottom: 4rem;
   border: 1px black solid;
-  width: calc(100% - 5rem);
-  max-width: 660px;
+  width: calc(100% - 4rem - 2px);
 }
 
 h2 {
@@ -118,22 +117,12 @@ h2 {
 
 h3 {
   font-size: 27px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   line-height: 1.15;
-  margin-top: 0.7rem;
+  margin-top: 1.5rem;
   font-weight: normal;
 }
 
-
-h2:hover{
-  letter-spacing: -.1px;
-  transition: .1s ease-out;
-}
-
-h5:hover, h3:hover{
-  letter-spacing: -.1px;
-  transition: .1s ease-out;
-}
 
 h5 {
   font-size: 16px;
@@ -142,11 +131,15 @@ h5 {
   margin-top: 0;
 }
 
+h2:hover, h5:hover, h3:hover{
+  letter-spacing: -.1px;
+  transition: .1s ease-out;
+}
 
 
 .lijevo img {
 	margin-top: 2rem;
-	margin-bottom: 6rem;
+	margin-bottom: 4.5rem;
 	display: block;
   width: 100%;
   max-width: 1400px;
@@ -159,10 +152,7 @@ h5 {
 }
 
 
-
-
 @media screen and (max-width : 800px) {
-
 
   body {
   	font-size: 19px;
@@ -197,9 +187,7 @@ h5 {
     width: 100%;
   }
 
-
   .desno {
-
     position: absolute;
     width: 100%;
     display: flex;
@@ -221,14 +209,6 @@ h5 {
     padding: 1.5rem 1.5rem .5rem 1.5rem;
     margin-bottom: 4rem;
     width: calc(100% - 3rem - 2px);
-  }
-
-
-}
-
-@media screen and (min-width : 1600px) {
-  .sredina {
-    width: auto;
   }
 
 

@@ -18,7 +18,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	color: #0C1A00;
-	background: white;
+	background: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: left;
@@ -186,11 +186,12 @@ p:hover{
   color: #fff;
   border-radius: 20px;
   border: 1px #0C1A00 solid;
-  padding: .5rem 1.2rem;
+  padding: .5rem 1.3rem .6rem 1.3rem;
   background: #0C1A00;
   touch-action: none;
   user-select: none;
-  transition: text-shadow .1s ease-out;
+  transition: .08s ease-out;
+  box-shadow: 0px 6px 24px 0px rgba(0,0,0,0.25);
   }
 
 .info {
@@ -199,23 +200,24 @@ p:hover{
   color: white;
   font-style: normal;
   width: 320px;
-  top: 50px;
-  left:0;
-  padding: 1rem;
+  top: 44px;
+  left: 0;
+  padding: 0.8rem 1rem 1.1rem 1rem;
   text-shadow: none;
   display: none;
 }
 
 .infoButton:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
-  transition: text-shadow .1s ease-out;
+  transition: .08s ease-out;
   color: #0C1A00;
+  box-shadow: none;
 }
 
 .infoButton:active {
   font-style: normal;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
-  transition: text-shadow .1s ease-out;
+  transition: .08s ease-out;
 }
 
 .infoButton:active > .info{
