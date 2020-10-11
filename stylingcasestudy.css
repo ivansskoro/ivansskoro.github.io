@@ -52,7 +52,7 @@ a:hover {
   padding-left: 1rem;
   padding-right: 1rem;
   width: calc(100% - 2rem);
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   justify-content: space-between;
   position: fixed;
