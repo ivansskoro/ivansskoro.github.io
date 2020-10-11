@@ -50,8 +50,9 @@ a:hover {
 .wrapper {
 	display: flex;
   padding-left: 1.5rem;
-  width: calc(100% - 2rem);
+  width: calc(100% - 3rem);
   height: 100%;
+  padding-top: 1rem;
   overflow: hidden;
   justify-content: space-between;
   position: fixed;
@@ -73,7 +74,6 @@ a:hover {
 .desno {
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
   position: absolute;
   right: 1.5rem;
   height: auto;
@@ -106,8 +106,7 @@ p, h2, h3, h5 {
   padding: 1.2rem 3rem 0.5rem 2rem;
   margin-bottom: 4rem;
   border: 1px black solid;
-  width: calc(660px - 5rem - 2px);
-  max-width: 660px;
+  max-width: calc(660px - 5rem - 2px);
 }
 
 h2 {
