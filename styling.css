@@ -299,6 +299,10 @@ body {
   z-index: 0;
 }
 
+.infoButton {
+
+  padding: .5rem 1.3rem .6rem 1.3rem;
+}
 .info {
   width: 280px;
   top: unset;

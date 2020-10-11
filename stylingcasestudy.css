@@ -52,7 +52,7 @@ a:hover {
   padding-left: 1rem;
   padding-right: 1rem;
   width: calc(100% - 2rem);
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   justify-content: space-between;
   position: fixed;
@@ -197,6 +197,7 @@ h2:hover, h5:hover, h3:hover{
     z-index: 20;
     left: 0;
     padding: 1rem;
+    padding-bottom: 3vh;
     border-top: 1px solid #000;
   }
 
