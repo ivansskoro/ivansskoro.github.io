@@ -171,6 +171,11 @@ h2:hover, h5:hover, h3:hover{
     line-height: 1.1;
   }
 
+  p {
+    margin-bottom: 2rem;
+  }
+
+
   .wrapper {
   	flex-direction: column;
   	overflow: auto;
@@ -206,6 +211,22 @@ h2:hover, h5:hover, h3:hover{
     padding-top: 0.6rem;
     border-top: 1px solid #000;
   }
+
+  .lijevo img {
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    margin-bottom: 5rem;
+    margin-top: 0;
+  }
+
+  .imageCaption {
+    margin-top: -4rem;
+    font-size: 16px;
+    margin-bottom: 4rem;
+  }
+
 
 
 
