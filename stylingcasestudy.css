@@ -49,8 +49,7 @@ a:hover {
 
 .wrapper {
 	display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
   width: calc(100% - 2rem);
   height: 100%;
   overflow: hidden;
@@ -59,7 +58,7 @@ a:hover {
 }
 
 .scroll {
-  width: 75%;
+  width: 70%;
   height: 100%;
   overflow: scroll;
   padding-top: 1rem;
@@ -69,7 +68,6 @@ a:hover {
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  max-width: 660px;
 }
 
 .desno {
@@ -94,6 +92,7 @@ p {
 p, h2, h3, h5 {
   width: 100%;
   font-weight: normal;
+  max-width: 660px;
 }
 
 .blok {
@@ -104,7 +103,8 @@ p, h2, h3, h5 {
   padding: 1.2rem 3rem 0.5rem 2rem;
   margin-bottom: 4rem;
   border: 1px black solid;
-  width: calc(100% - 4rem - 2px);
+  width: calc(660px - 5rem - 2px);
+  max-width: 660px;
 }
 
 h2 {
@@ -138,17 +138,18 @@ h2:hover, h5:hover, h3:hover{
 
 
 .lijevo img {
-	margin-top: 2rem;
-	margin-bottom: 4.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 6rem;
 	display: block;
   width: 100%;
   max-width: 1400px;
+  border-bottom: 1px solid #000;
 }
 
 .imageCaption {
-  margin-top: -3.5rem;
+  margin-top: -5rem;
   font-size: 16px;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 
@@ -174,11 +175,14 @@ h2:hover, h5:hover, h3:hover{
   	flex-direction: column;
   	overflow: auto;
     height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: calc(100vw - 2rem);
   }
 
   .scroll {
     width: 100%;
-    padding-top: 1rem;
+    padding-bottom: 5rem;
   }
 
   .lijevo {
@@ -189,7 +193,7 @@ h2:hover, h5:hover, h3:hover{
 
   .desno {
     position: absolute;
-    width: 100%;
+    width: calc(100vw - 2rem);
     display: flex;
     flex-direction: column;
     bottom: 0;
@@ -197,9 +201,13 @@ h2:hover, h5:hover, h3:hover{
     z-index: 20;
     left: 0;
     padding: 1rem;
-    padding-bottom: 1.5rem;
+    padding-right: none;
+    padding-bottom: 1.2rem;
+    padding-top: 0.6rem;
     border-top: 1px solid #000;
   }
+
+
 
   .desno a{
     margin-top: .5rem;
@@ -212,5 +220,13 @@ h2:hover, h5:hover, h3:hover{
     width: calc(100% - 3rem - 2px);
   }
 
-
 }
+
+@media only screen
+  and (device-width : 375px)
+  and (device-height : 812px)
+  and (-webkit-device-pixel-ratio : 3) {
+    .desno {
+      padding-bottom: 3rem;
+    }
+   }
