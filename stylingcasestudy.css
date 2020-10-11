@@ -58,23 +58,26 @@ a:hover {
 }
 
 .scroll {
-  width: 70%;
   height: 100%;
   overflow: scroll;
-  padding-top: 1.5rem;
+  padding-top: none;
 }
 
 .lijevo {
+  width: 70%;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .desno {
-  width: 20%;
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
+  position: absolute;
+  right: 1.5rem;
+  height: auto;
+  width: auto;
 }
 
 .disabled {
@@ -157,11 +160,11 @@ h2:hover, h5:hover, h3:hover{
 
   body {
   	font-size: 19px;
-  	line-height: 1.15;
+  	line-height: 1.2;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 29px;
     line-height: 1.05;
   }
 
