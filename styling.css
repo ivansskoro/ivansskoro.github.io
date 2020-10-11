@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: UntitledSans;
-  src: url(asseti/Font/UntitledSansRegular.otf);
+  src: url(UntitledSansRegular.otf);
+  font-display: swap;
 }
 
 
