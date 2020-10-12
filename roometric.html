@@ -37,7 +37,7 @@
 				<section class="blok">
 					<h3>The challenge</h3>
 					<p>
-					Redesign a complicated Augmented Reality scanning process.
+					Redesign a complicated Augmented Reality interior scanning process.
 					There was no clear flow and major inconsistencies in the information architecture
 					presented problems for the users — identical elements behaved differently on different screens,
 					and back/cancel hierarchy was not consistent.
@@ -47,7 +47,7 @@
 				<p>
 					Observing users while they used the app and getting informed about the technical
 					limitations of the software helped me define a new user flow.
-					Each revision of the main feature — the scaning process — was tested with 3 users. The rest of
+					Each revision of the main feature — the scanning process — was tested with 3 users. The rest of
 					the app was structured and designed following regular UI & UX practices.
 					I complimented the new design with a public website.
 				</p>
@@ -59,77 +59,84 @@
 				Solutions
 				</p>
 				<h2>
-					A step-by-step wizard was implemented to simplify the scaning process.
+					A step-by-step wizard was implemented to simplify the scanning process.
 					Information structure was revised with success messages and improved with guides and
-					scaning tips. Users were provided with consistent back functionality
+					scanning tips. Users were provided with consistent back functionality
 					and warnings for destructive actions.
 				</h2>
 				<h2>
-					Number of steps in the main flow was decreased, speeding up the scaning process.
+					Number of steps in the main flow was decreased, speeding up the scanning process.
 				</h2>
 			</br>
 
 			</section>
 
 			<section class="blok">
-				<h3>Flow diagram</h3>
+				<h3>Information architecture</h3>
 				<p>
-					Based on user observations and stakeholder intreviews a new flow diagram was designed 
-					for future reference.	Step-by-step scan instructions guide the user through the most
-					complicated flow in the app.
+					Based on user observations and stakeholder intreviews, a revised information architecture was designed 
+					for future reference.	This helped in pinpointing and correcting UX problems.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
+				<img src="asseti/Projekti/roometric/roometric_flow.jpg" alt="Roometric user flow">
 				<p>
-					A detailed flow diagram helped me to identify the main issues and streamline the scanning process.
-					Users were provided with consistent back functionality
-					and warnings for destructive actions — all missing in the previous version.
+					A detailed flow diagram helped me in streamlining the scanning process.
+					Step-by-step wizard guides the users through the process.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
+				<img src="asseti/Projekti/roometric/roometric_flow_1.jpg" alt="Roometric user flow 1">
+				<img src="asseti/Projekti/roometric/roometric_flow_2.jpg" alt="Roometric user flow 2">
+				<p class="imageCaption">
+					Sketch prototype was used for testing.
+				</p>
 
 			</section>
 
 			<section class="blok">
 				<h3>AR scanning</h3>
 				<p>
-					Users can see all of their measured appartments and easily create a new measurement.
+					Users can see their measured appartments or start a new measurement directly from the home screen.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
+				<img src="asseti/Projekti/roometric/roometric_measure.jpg" alt="Roometric add appartment">
+				<p class="imageCaption">
+					Empty state illustration invites users to start scanning.
+				</p>
 				<p>
 					Most of the users were not familiar  with AR, so it
-					is important to provide them with constructive and timely feedback.
+					is important to provide them with constructive and timely instructions and feedback.
+					Each measurement step is categorized based on the objects user will be measuring in that step.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
-
+				<img src="asseti/Projekti/roometric/roometric_measure_1.jpg" alt="Roometric floor scan">
 				<p>
-					All measurements taken by users are displayed in real time AR, providing users with feedback.
+					Measuring is done by taping the "+" button when it is aligned with a corner of the measured object.
+					Measurements are immediately calculated and overlayed in AR, providing reassurance that the scan is going well.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
+				<img src="asseti/Projekti/roometric/roometric_measure_2.jpg" alt="Roometric measure walls">
+				<p class="imageCaption">
+					Each step has measuring instructions on top.
+				</p>
 
 			</section>
 
 			<section class="blok">
 				<h3>After the scan</h3>
 
+
+				<p>
+					Potential rent decrease and payback are shown if the user pays too much rent.
+					The app compares the rent to the law defined limit for that area and housing size.
+				</p>
+				<img src="asseti/Projekti/roometric/roometric_after.jpg" alt="Roometric user flow">
+				<img src="asseti/Projekti/roometric/roometric_after_2.jpg" alt="Roometric user flow">
+				<p class="imageCaption">
+					Appartment details are shown in a contextual menu.
+				</p>
 				<p>
 					User is presented with a full 3D model — with floor and wall area surface calculated automatically.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
+				<img src="asseti/Projekti/roometric/roometric_after_1.jpg" alt="Roometric user flow">
 				<p>
-					Possible rent decrease and payback are shown if the user pays too much rent.
-					The app compares the rent to the law defined limit for that area and housing size.
+					Users can export a scan with all the measurements and elements or upload it to 3rd party services
+					 — easily sharing their appartment plan with interior designers.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
-
-				<p>
-					Scan with all measurements and elements (doors, windows etc.) can be uploaded to 3rd party services.
-					Users can export a file or generate a QR code.
-					QR code is scanned via 3rd party desktop software.
-					The app injects the URL with correct parameters making the scan available
-					in desktop interior planing software.
-					After that, users can easily share their plan interior designers.
-				</p>
-
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
 
 			</section>
 
@@ -140,7 +147,7 @@
 					Since the app was developed in Unity, Inter typeface — carefully crafted & designed
 					for screens — was used accross both platform.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
+				<img src="asseti/Projekti/roometric/roometric_system.jpg" alt="Roometric design system">
 
 			</section>
 
@@ -150,9 +157,17 @@
 					The new visual language was applied to a simple landing page as well—
 					communicating the features and advantages of Roometric to private and business customers.
 				</p>
-				<img src="asseti/Projekti/Aircash/aircash_placeholder.png" alt="Aircash app homescreen and settings">
-
+				<img src="asseti/Projekti/roometric/roometric_web.jpg" alt="Roometric public website">
+				<img src="asseti/Projekti/roometric/roometric_web_1.jpg" alt="Roometric public website details">
+				<p class="imageCaption">
+					Roometric domestic market is Germany.
+				</p>
 			</section>
+
+			</br>
+			<p>
+				—
+			</p>
 
 		</section>
 	</section>
