@@ -62,7 +62,6 @@ a:hover {
   height: 100%;
   overflow: scroll;
   padding-top: none;
-
   padding-top: 1rem;
 }
 
@@ -152,7 +151,7 @@ h2:hover, h5:hover, h3:hover{
 	margin-bottom: 6rem;
 	display: block;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1800px;
   border-bottom: 1px solid #000;
 }
 
